@@ -2,7 +2,9 @@ const dotenv = require('dotenv');
 dotenv.config();
 
 const express = require('express');
+const dbCon = require('./config/mongodb');
 const app = express();
+dbCon();
 
 app.use(express.json());
 
