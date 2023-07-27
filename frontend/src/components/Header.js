@@ -1,14 +1,14 @@
 import { Link } from 'react-router-dom';
-import blank from '../asset/blank.png';
+import logo512 from '../asset/logo512.png';
 
 export const Header = () => {
   return (
     <header>
       <nav>
         <div className="webProfile">
-          <img src={blank} alt="" className="webLogo" />
+          <img src={logo512} alt="" className="webLogo" />
           <Link to={'/'}>
-            <p className="webName">Nama Website</p>
+            <p className="webName">Lanobake & Moolo</p>
           </Link>
         </div>
         <div className="nav-link">

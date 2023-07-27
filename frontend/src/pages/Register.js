@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
-import dummyImg from '../asset/dummyImg.jpg';
-import blank from '../asset/blank.png';
+import regImg from '../asset/regImg.JPG';
+import logo512 from '../asset/logo512.png';
 
 export const Register = () => {
   const navigate = useNavigate();
@@ -15,28 +15,28 @@ export const Register = () => {
       <div className="register-content">
         <div className="web-name">
           <Link to={'/'} className="web-name-link">
-            <img src={blank} alt="" />
-            <h4>Nama Website</h4>
+            <img src={logo512} alt="" />
+            <h4>Lanobake & Moolo</h4>
           </Link>
         </div>
         <div className="form-container">
-          <h1>Register</h1>
+          <h1>Get Started🚀</h1>
           <form action="">
             <input type="text" placeholder="Username" />
             <input type="email" placeholder="Email" />
             <input type="password" placeholder="Password" />
-            <button>Submit</button>
+            <button>Register</button>
           </form>
           <p>
             Sudah Punya Akun?
             <Link to={'/login'} className="registerLink">
-              Masuk
+              Login
             </Link>
           </p>
         </div>
       </div>
       <div className="hero-image">
-        <img src={dummyImg} alt="" />
+        <img src={regImg} alt="" />
       </div>
     </div>
   );

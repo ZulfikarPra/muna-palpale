@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
-import dummyImg from '../asset/dummyImg.jpg';
-import blank from '../asset/blank.png';
+import logImg from '../asset/logImg.JPG';
+import logo512 from '../asset/logo512.png';
 
 export const Login = () => {
   const navigate = useNavigate();
@@ -14,27 +14,27 @@ export const Login = () => {
       <div className="login-content">
         <div className="web-name">
           <Link to={'/'} className="web-name-link">
-            <img src={blank} alt="" />
-            <h4>Nama Website</h4>
+            <img src={logo512} alt="" />
+            <h4>Lanobake & Moolo</h4>
           </Link>
         </div>
         <div className="form-container">
-          <h1>Login</h1>
+          <h1>Welcome Back👋</h1>
           <form action="">
             <input type="text" placeholder="Username" />
             <input type="password" placeholder="Password" />
-            <button>Submit</button>
+            <button>Login</button>
           </form>
           <p>
             Belum Punya Akun?
             <Link className="loginLink" to={'/register'}>
-              Daftar
+              Register
             </Link>
           </p>
         </div>
       </div>
       <div className="hero-image">
-        <img src={dummyImg} alt="" />
+        <img src={logImg} alt="" />
       </div>
     </div>
   );

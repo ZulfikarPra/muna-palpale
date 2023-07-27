@@ -19,15 +19,17 @@ html {
       font-size: 1.2rem;
       padding-left: 1.4rem;
       .web-name-link {
+        font-family: Black Mango;
         text-decoration: none;
         color: black;
         display: flex;
         align-items: center;
         gap: 5px;
+        margin-top: 4px;
         img {
-          width: 40px;
-          height: 40px;
-          border-radius: 50%;
+          margin-top: -12px;
+          width: 56px;
+          height: 56px;
         }
       }
     }
@@ -69,16 +71,19 @@ html {
           border-radius: 9999px;
           border: 0px;
           outline: none;
-          background-color: orange;
+          background-color: #FFA111;
           cursor: pointer;
+          font-family: Black Mango;
+          font-weight: 600;
+          letter-spacing: 1px;
           margin-top: 25px;
         }
       }
       p {
         .registerLink {
           margin-left: 5px;
-          font-weight: 800;
-          color: red;
+          font-weight: 1000;
+          color: #018891;
           text-decoration: none;
         }
       }
