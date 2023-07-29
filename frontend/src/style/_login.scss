@@ -8,6 +8,9 @@
     width: 55%;
     height: 100%;
     position: relative;
+    background-image: url('../asset/texture.jpg');
+    background-size: cover;
+    // background-repeat: no-repeat;
 
     // background-color: aqua;
 
@@ -75,7 +78,7 @@
           border-radius: 9999px;
           border: 0px;
           outline: none;
-          background-color: #FFA111;
+          background-color: #ffa111;
           // justify-self: end;
           cursor: pointer;
           margin-top: 25px;
