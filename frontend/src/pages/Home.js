@@ -13,6 +13,21 @@ export const Home = () => {
       <Link to={'/register'}>
         <button>Register</button>
       </Link>
+      <Link to={'/artikel'}>
+        <button>Artikel</button>
+      </Link>
+      <Link to={'/budaya'}>
+        <button>Budaya</button>
+      </Link>
+      <Link to={'/galeri'}>
+        <button>Galeri</button>
+      </Link>
+      <Link to={'/peta'}>
+        <button>Peta</button>
+      </Link>
+      <Link to={'/potensi-alam'}>
+        <button>Potensi Alam</button>
+      </Link>
       <button onClick={() => dispatch(logout())}>Logout</button>
       <MapLF/>
     </div>

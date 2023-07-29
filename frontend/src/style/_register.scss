@@ -10,6 +10,7 @@ html {
     width: 55%;
     height: 100%;
     position: relative;
+    background-image: url('../asset/texture.jpg');
 
     .web-name {
       display: flex;
@@ -71,7 +72,7 @@ html {
           border-radius: 9999px;
           border: 0px;
           outline: none;
-          background-color: #FFA111;
+          background-color: #ffa111;
           cursor: pointer;
           font-family: Black Mango;
           font-weight: 600;
