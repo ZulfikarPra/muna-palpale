@@ -39,7 +39,7 @@ export const Login = () => {
         <div className="form-container">
           <h1>Welcome Back👋</h1>
           <form action="">
-            <input type="text" placeholder="Username" onChange={(e) => setEmail(e.target.value)} />
+            <input type="text" placeholder="Email" onChange={(e) => setEmail(e.target.value)} />
             <input type="password" placeholder="Password" onChange={(e) => setPassword(e.target.value)} />
             <button onClick={authHandler}>Login</button>
           </form>
