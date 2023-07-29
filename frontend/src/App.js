@@ -3,17 +3,13 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import { Home } from './pages/Home';
 import { Login } from './pages/Login';
 import { Register } from './pages/Register';
-<<<<<<< HEAD
 import { Header } from './components/Header';
-import './style.css';
 import 'leaflet/dist/leaflet.css'
-=======
 import { Artikel } from './pages/Artikel';
 import { Budaya } from './pages/Budaya';
 import { Galeri } from './pages/Galeri';
 import { Peta } from './pages/Peta';
 import { PotensiAlam } from './pages/PotensiAlam';
->>>>>>> bcc939c1f47aa2dc843dc032b0e562221df4894a
 
 function App() {
   return (
