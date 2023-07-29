@@ -1,11 +1,13 @@
 import { Link } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
 import { logout } from '../actions/userActions';
+import { Header } from '../components/Header';
 
 export const Home = () => {
   const dispatch = useDispatch();
   return (
     <div>
+      <Header></Header>
       <Link to={'/login'}>
         <button>Login</button>
       </Link>
