@@ -15,7 +15,7 @@ const adminProtect = asyncHandler(async (req, res, next) => {
 
       admin = req.user.isAdmin;
 
-      if (!admin) {
+      if (admin == 'master') {
         res.status(401);
         throw new Error('Not authorized as an admin!');
       }
