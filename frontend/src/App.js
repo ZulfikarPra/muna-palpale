@@ -5,6 +5,7 @@ import { Login } from './pages/Login';
 import { Register } from './pages/Register';
 import { Header } from './components/Header';
 import './style.css';
+import 'leaflet/dist/leaflet.css'
 
 function App() {
   return (
