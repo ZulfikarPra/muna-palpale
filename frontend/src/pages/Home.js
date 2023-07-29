@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
 import { logout } from '../actions/userActions';
 import { Header } from '../components/Header';
-import MapLF from '../components/MapLF';
+// import MapLF from '../components/MapLF';
 
 export const Home = () => {
   const dispatch = useDispatch();
@@ -31,7 +31,7 @@ export const Home = () => {
         <button>Potensi Alam</button>
       </Link>
       <button onClick={() => dispatch(logout())}>Logout</button>
-      <MapLF />
+      {/* <MapLF /> */}
     </div>
   );
 };
