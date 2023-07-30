@@ -1,5 +1,55 @@
-.webProfile {
-  .webLogo {
-    width: 30px;
+header {
+  // position: ;
+  // overflow: hidden;
+  // background-color: aqua;
+  width: 100%;
+  height: 80px;
+  .webProfile {
+    box-sizing: border-box;
+    // background-color: yellow;
+    height: 100%;
+    width: 100%;
+    // overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 3em;
+    .webLogo {
+      display: flex;
+      align-items: center;
+      gap: 13px;
+      img {
+        height: 60%;
+      }
+      .nav-link-logo {
+        text-decoration: none;
+        color: black;
+        font-size: 1.2rem;
+        font-family: Black Mango;
+        font-weight: 700;
+      }
+    }
+    nav {
+      width: fit-content;
+      // background-color: green;
+      ul {
+        // background-color: purple;
+        height: 100%;
+        display: flex;
+        gap: 2em;
+        align-items: center;
+        justify-content: center;
+        li {
+          // background-color: beige;
+          list-style-type: none;
+          .nav-link {
+            text-decoration: none;
+            color: black;
+            font-family: Black Mango;
+            font-weight: 700;
+          }
+          // display: inline;
+        }
+      }
+    }
   }
 }

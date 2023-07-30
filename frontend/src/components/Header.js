@@ -4,26 +4,58 @@ import logo512 from '../asset/logo512.png';
 export const Header = () => {
   return (
     <header>
-      <nav>
-        <div className="webProfile">
+      <div className="webProfile" id="navigation-bar">
+        <div className="webLogo">
           <img src={logo512} alt="" className="webLogo" />
-          <Link to={'/'}>
-            <p className="webName">Lanobake & Moolo</p>
+          <Link to={'/'} className="nav-link-logo">
+            Lanobake & Moolo
           </Link>
         </div>
-        <div className="nav-link">
-          <Link className="link">Desa Moolo</Link>
-          <Link className="link">Desa Lanobake</Link>
-        </div>
-        <div className="nav-login-register">
-          <Link to={'/login'}>
-            <button>Login</button>
-          </Link>
-          <Link to={'/register'}>
-            <button>Register</button>
-          </Link>
-        </div>
-      </nav>
+        <nav>
+          <ul>
+            {/* <li>
+              <Link to={'/login'} className="nav-link">
+                Login
+              </Link>
+            </li>
+            <li>
+              <Link to={'/register'} className="nav-link">
+                Register
+              </Link>
+            </li> */}
+            <li>
+              <Link to={'/'} className="nav-link">
+                Beranda
+              </Link>
+            </li>
+            <li>
+              <Link to={'/potensi-alam'} className="nav-link">
+                Potensi Alam
+              </Link>
+            </li>
+            <li>
+              <Link to={'/budaya'} className="nav-link">
+                Budaya
+              </Link>
+            </li>
+            <li>
+              <Link to={'/artikel'} className="nav-link">
+                Artikel
+              </Link>
+            </li>
+            <li>
+              <Link to={'/peta'} className="nav-link">
+                Peta
+              </Link>
+            </li>
+            <li>
+              <Link to={'/galeri'} className="nav-link">
+                Galeri
+              </Link>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </header>
   );
 };

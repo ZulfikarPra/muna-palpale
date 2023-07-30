@@ -1,7 +1,7 @@
 export const Galeri = () => {
   return (
-    <div>
-      <h1>GALERI</h1>
+    <div className="galeri">
+      <h1>Galeri</h1>
     </div>
   );
 };

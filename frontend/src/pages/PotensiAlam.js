@@ -1,7 +1,7 @@
 export const PotensiAlam = () => {
   return (
-    <div>
-      <h1>POTENSI ALAM</h1>
+    <div className="potensi-alam">
+      <h1>Potensi Alam</h1>
     </div>
   );
 };

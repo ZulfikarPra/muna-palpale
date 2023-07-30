@@ -7,8 +7,16 @@ import { Header } from '../components/Header';
 export const Home = () => {
   const dispatch = useDispatch();
   return (
-    <div>
-      <Header></Header>
+    <div className="beranda">
+      <h1>Beranda</h1>
+      <Link to={'/login'}>
+        <button>Login</button>
+      </Link>
+      <Link to={'/register'}>
+        <button>Register</button>
+      </Link>
+      <button onClick={() => dispatch(logout())}>Logout</button>
+      {/* <Header></Header>
       <Link to={'/login'}>
         <button>Login</button>
       </Link>
@@ -30,7 +38,7 @@ export const Home = () => {
       <Link to={'/potensi-alam'}>
         <button>Potensi Alam</button>
       </Link>
-      <button onClick={() => dispatch(logout())}>Logout</button>
+      <button onClick={() => dispatch(logout())}>Logout</button> */}
       {/* <MapLF /> */}
     </div>
   );
