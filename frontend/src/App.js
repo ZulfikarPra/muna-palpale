@@ -6,10 +6,13 @@ import { Register } from './pages/Register';
 import { Header } from './components/Header';
 import 'leaflet/dist/leaflet.css';
 import { Artikel } from './pages/Artikel';
-import { Budaya } from './pages/Budaya';
+// import { Budaya } from './pages/Budaya';
 import { Galeri } from './pages/Galeri';
 import { Peta } from './pages/Peta';
-import { PotensiAlam } from './pages/PotensiAlam';
+// import { PotensiAlam } from './pages/PotensiDesa';
+import { TentangDesa } from './pages/TentangDesa';
+// import { PotensiDesa } from './pages/DayaTarik';
+import { DayaTarik } from './pages/DayaTarik';
 
 function App() {
   return (
@@ -21,10 +24,12 @@ function App() {
           <Route path="/login" element={<Login></Login>}></Route>
           <Route path="/register" element={<Register></Register>}></Route>
           <Route path="/artikel" element={<Artikel></Artikel>}></Route>
-          <Route path="/budaya" element={<Budaya></Budaya>}></Route>
+          {/* <Route path="/budaya" element={<Budaya></Budaya>}></Route> */}
           <Route path="/galeri" element={<Galeri></Galeri>}></Route>
           <Route path="/peta" element={<Peta></Peta>}></Route>
-          <Route path="/potensi-alam" element={<PotensiAlam></PotensiAlam>}></Route>
+          <Route path="/daya-tarik" element={<DayaTarik></DayaTarik>}></Route>
+          <Route path="/tentang-desa" element={<TentangDesa></TentangDesa>}></Route>
+          {/* <Route path="/potensi-alam" element={<PotensiAlam></PotensiAlam>}></Route> */}
         </Routes>
       </Router>
     </div>
