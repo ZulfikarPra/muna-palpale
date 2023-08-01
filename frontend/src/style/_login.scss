@@ -1,9 +1,7 @@
 .login {
   display: flex;
   height: 100vh;
-  //   background-color: yellow;
   overflow: hidden;
-  //   flex-direction: row-reverse;
 
   .login-content {
     width: 55%;
@@ -11,13 +9,10 @@
     position: relative;
     background-image: url('../asset/texture.jpg');
     background-size: cover;
-    // background-repeat: no-repeat;
 
-    // background-color: aqua;
 
     .web-name {
       display: flex;
-      //   background-color: yellow;
       height: 80px;
       align-items: center;
       gap: 5px;

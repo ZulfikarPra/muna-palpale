@@ -1,0 +1,39 @@
+//LOGIN
+
+@media screen and (max-width : 800px ){
+    .login,.register{
+        .login-content,.register-content{
+            position: absolute;
+            top: -50%;
+            left: 50%;
+            transform: translate(-50%,50%);
+            z-index: 9;
+            width: 100%;
+            background: none;
+            .web-name{
+                .web-name-link{
+                    color: white;
+                }
+            }
+            .form-container{
+                form{
+                    input{
+                        border: 2px solid black;
+                        background-color: rgba(255, 255, 255, 0.96);
+                    }
+                }
+                width: 75%;
+                padding: 2em;
+                border-radius: 25px;
+                background-color: rgba(255, 255, 255, 0.774);
+            }
+        }
+        .hero-image{
+            position: relative;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+    }
+}
