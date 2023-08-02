@@ -29,20 +29,25 @@ export const Header = () => {
               </Link>
             </li>
             <li>
-              <Link to={'/potensi-alam'} className="nav-link">
-                Potensi Alam
+              <Link to={'/tentang-desa'} className="nav-link">
+                Tentang Desa
               </Link>
             </li>
             <li>
+              <Link to={'/daya-tarik'} className="nav-link">
+                Daya Tarik
+              </Link>
+            </li>
+            {/* <li>
               <Link to={'/budaya'} className="nav-link">
                 Budaya
               </Link>
-            </li>
-            <li>
+            </li> */}
+            {/* <li>
               <Link to={'/artikel'} className="nav-link">
                 Artikel
               </Link>
-            </li>
+            </li> */}
             <li>
               <Link to={'/peta'} className="nav-link">
                 Peta
@@ -51,6 +56,11 @@ export const Header = () => {
             <li>
               <Link to={'/galeri'} className="nav-link">
                 Galeri
+              </Link>
+            </li>
+            <li>
+              <Link to={'/login'} className="nav-link nav-link-login">
+                Login
               </Link>
             </li>
           </ul>

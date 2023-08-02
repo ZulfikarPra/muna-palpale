@@ -1,9 +1,14 @@
 header {
-  // position: ;
+  // position: sticky;
   // overflow: hidden;
-  // background-color: aqua;
+  background-color: white;
+  opacity: 80%;
   width: 100%;
   height: 80px;
+  position: sticky;
+  top: 0px;
+  z-index: 1;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   .webProfile {
     box-sizing: border-box;
     // background-color: yellow;
@@ -30,7 +35,9 @@ header {
     }
     nav {
       width: fit-content;
+      // position: sticky;
       // background-color: green;
+
       ul {
         // background-color: purple;
         height: 100%;
@@ -38,6 +45,7 @@ header {
         gap: 2em;
         align-items: center;
         justify-content: center;
+        // position: sticky;
         li {
           // background-color: beige;
           list-style-type: none;
@@ -46,6 +54,13 @@ header {
             color: black;
             font-family: Black Mango;
             font-weight: 700;
+          }
+          .nav-link-login {
+            // background-color: #59c1bd;
+            background: linear-gradient(#59c1bd, #0883b2);
+            padding: 0.5rem 1.2rem;
+            color: white;
+            border-radius: 1.5rem;
           }
           // display: inline;
         }

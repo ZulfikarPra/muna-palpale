@@ -1,8 +1,35 @@
 .galeri {
-  h1 {
-    font-family: 'Croissant One';
-    font-size: 200px;
-    text-align: center;
-    font-weight: 500;
+  // box-sizing: border-box;
+  .galeri-hero-image {
+    display: flex;
+    // background-color: rebeccapurple;
+    padding: 3rem 0 20rem 3rem;
+    h1 {
+      font-family: Mango;
+      font-size: 250px;
+      text-align: center;
+      font-weight: 600;
+      color: white;
+      // padding: 10rem;
+      // background-color: aqua;
+      // width: 100%;
+      // position: relative;
+    }
+    background-image: url('../asset/galeri-header.png');
+  }
+  .galeri-content {
+    // box-sizing: border-box;
+    display: flex;
+    gap: 0.4rem;
+    flex-wrap: wrap;
+    padding: 2rem;
+    // width: 100%;
+    // flex: auto;
+    // flex-grow: 1;
+    // min-width: 33%;
+    .child {
+      flex-basis: 33%; // For 3 items in a row.
+      // gap: 0.5rem;
+    }
   }
 }
