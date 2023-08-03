@@ -1,11 +1,14 @@
 header {
   // position: sticky;
   // overflow: hidden;
-  background-color: white;
+  background-color: rgba(255, 255, 255, 0.738);
+  backdrop-filter: blur(2000px);
+  // filter: blur(20px);
+  // filter: ;
   opacity: 80%;
   width: 100%;
   height: 80px;
-  position: sticky;
+  position: fixed;
   top: 0px;
   z-index: 1;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
