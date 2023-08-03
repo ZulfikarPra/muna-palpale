@@ -25,11 +25,17 @@ export const Header = () => {
                 Beranda
               </Link>
             </li>
-            <li>
-              <Link to={'/tentang-desa'} className="nav-link">
-                Tentang Desa
-              </Link>
-            </li>
+            <div className="dropdown">
+              <li className="dropbtn">Tentang Desa</li>
+              <div className="dropdown-content">
+                <Link to={'/tentang-desa-lanobake'} className="nav-link">
+                  Desa Lanobake
+                </Link>
+                <Link to={'/tentang-desa-moolo'} className="nav-link">
+                  Desa Moolo
+                </Link>
+              </div>
+            </div>
             <li>
               <Link to={'/'} className="nav-link">
                 Daya Tarik
