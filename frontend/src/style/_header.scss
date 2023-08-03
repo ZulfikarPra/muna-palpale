@@ -1,12 +1,11 @@
 header {
-  // position: sticky;
-  // overflow: hidden;
+
   background-color: rgba(255, 255, 255, 0.738);
   backdrop-filter: blur(2000px);
-  // filter: blur(20px);
-  // filter: ;
+
   opacity: 80%;
   width: 100%;
+  // overflow: hidden;
   height: 80px;
   position: fixed;
   top: 0px;
@@ -17,7 +16,6 @@ header {
     // background-color: yellow;
     height: 100%;
     width: 100%;
-    // overflow: hidden;
     display: flex;
     justify-content: space-between;
     padding: 0 3em;
@@ -38,9 +36,7 @@ header {
     }
     nav {
       width: fit-content;
-      // position: sticky;
-      // background-color: green;
-
+      // overflow: hidden;
       ul {
         // background-color: purple;
         height: 100%;
@@ -48,7 +44,7 @@ header {
         gap: 2em;
         align-items: center;
         justify-content: center;
-        // position: sticky;
+
         li {
           // background-color: beige;
           list-style-type: none;
@@ -65,9 +61,52 @@ header {
             color: white;
             border-radius: 1.5rem;
           }
-          // display: inline;
+        }
+
+        .dropbtn {
+          text-decoration: none;
+          color: black;
+          font-family: Black Mango;
+          font-weight: 700;
+        }
+
+        .dropdown-content {
+          display: none;
+          position: absolute;
+          background-color: #f9f9f9;
+          min-width: 160px;
+          box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+          z-index: 1;
+          border-radius: 0.5rem;
+        }
+
+        .dropdown-content a {
+          float: none;
+          // color: white;
+          padding: 12px 16px;
+          text-decoration: none;
+          display: block;
+          text-align: left;
+          text-decoration: none;
+          color: black;
+          font-family: Black Mango;
+          font-weight: 700;
+          // background-color: red;
+        }
+
+        .dropdown-content :hover {
+          background-color: #ddd;
+          border-radius: 0.5rem;
+        }
+
+        .dropdown:hover .dropdown-content {
+          display: block;
         }
       }
+    }
+    .hamburgerMenu {
+      display: none;
+      background-color: rebeccapurple;
     }
   }
 }
