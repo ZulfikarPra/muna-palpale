@@ -3,8 +3,12 @@ import MapLF from '../components/MapLF';
 export const Peta = () => {
   return (
     <div className="peta">
-      <h1>Peta</h1>
-      <MapLF></MapLF>
+      <div className="peta-jumbotron">
+        <h1>Peta</h1>
+      </div>
+      <div className="peta-maplf">
+        <MapLF></MapLF>
+      </div>
     </div>
   );
 };
