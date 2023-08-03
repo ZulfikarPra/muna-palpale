@@ -1,7 +1,14 @@
 import { Link } from 'react-router-dom';
 import logo512 from '../asset/logo512.png';
+import { useState } from 'react';
 
 export const Header = () => {
+  const [hamburgerOpen, setHamburgerOpen] = useState(false);
+
+  const toggleHamburger = () => {
+    setHamburgerOpen(!hamburgerOpen);
+  };
+
   return (
     <header>
       <div className="webProfile" id="navigation-bar">
@@ -13,16 +20,6 @@ export const Header = () => {
         </div>
         <nav>
           <ul>
-            {/* <li>
-              <Link to={'/login'} className="nav-link">
-                Login
-              </Link>
-            </li>
-            <li>
-              <Link to={'/register'} className="nav-link">
-                Register
-              </Link>
-            </li> */}
             <li>
               <Link to={'/'} className="nav-link">
                 Beranda
@@ -34,20 +31,11 @@ export const Header = () => {
               </Link>
             </li>
             <li>
-              <Link to={'/daya-tarik'} className="nav-link">
+              <Link to={'/'} className="nav-link">
                 Daya Tarik
               </Link>
             </li>
-            {/* <li>
-              <Link to={'/budaya'} className="nav-link">
-                Budaya
-              </Link>
-            </li> */}
-            {/* <li>
-              <Link to={'/artikel'} className="nav-link">
-                Artikel
-              </Link>
-            </li> */}
+
             <li>
               <Link to={'/peta'} className="nav-link">
                 Peta
@@ -65,6 +53,9 @@ export const Header = () => {
             </li>
           </ul>
         </nav>
+        <button className="hamburgerMenu" onClick={toggleHamburger}>
+          palpale
+        </button>
       </div>
     </header>
   );
