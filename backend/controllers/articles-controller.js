@@ -1,5 +1,12 @@
 const asyncHandler = require('express-async-handler');
 const Article = require('../models/articles-model');
+const cloudinary = require('cloudinary').v2;
+
+cloudinary.config({
+  cloud_name: process.env.CLOUDINARY_CLOUD_NAME,
+  api_key: process.env.CLOUDINARY_API_KEY,
+  api_secret: process.env.CLOUDINARY_API_SECRET,
+});
 
 const getArticles = asyncHandler(async (req, res) => {
   const articles = await Article.find({});
@@ -35,6 +42,11 @@ const createArticle = asyncHandler(async (req, res) => {
     tags,
     picture,
   } = req.body;
+
+  const images = req.files;
+
+  const pointImage = images['photos'];
+  console.log(pointImage);
 
   const article = await Article.create({
     title,
@@ -90,6 +102,15 @@ const deleteArticle = asyncHandler(async (req, res) => {
   }
 });
 
+// eslint-disable-next-line require-jsdoc
+async function handleUpload(file) {
+  //console.log(file);
+  const uploadResponse = await cloudinary.uploader.upload(file, {
+    resource_type: 'image',
+  });
+  console.log(uploadResponse);
+}
+
 module.exports = {
   getArticles,
   getArticleById,
@@ -97,4 +118,5 @@ module.exports = {
   createArticle,
   updateArticle,
   deleteArticle,
+  handleUpload,
 };

@@ -3,6 +3,7 @@ import { MapContainer, TileLayer, GeoJSON, Marker, Popup } from 'react-leaflet';
 import L from 'leaflet';
 import borderL from '../data/lanobake.json'; 
 import borderM from '../data/moolo.json';
+//import labonsaIMG from '../asset/marker.png';
 
 function MapLF(){
   const position = [-4.79338, 122.8680];
