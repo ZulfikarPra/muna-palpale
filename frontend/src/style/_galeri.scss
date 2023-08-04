@@ -3,7 +3,9 @@
   height: 100vh;
   .galeri-hero-image {
     display: flex;
-    padding: 3em 0 20em 3em;
+    padding: 6em 0 25em 3em;
+    background-image: url('../asset/galeri-header.png');
+    background-size: cover;
     h1 {
       font-family: Mango;
       font-size: 18vw;
@@ -11,8 +13,6 @@
       font-weight: 600;
       color: white;
     }
-    background-image: url('../asset/galeri-header.png');
-    background-size: cover;
   }
   .galeri-content {
     display: flex;

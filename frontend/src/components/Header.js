@@ -37,7 +37,7 @@ export const Header = () => {
               </div>
             </div>
             <li>
-              <Link to={'/'} className="nav-link">
+              <Link to={'/daya-tarik'} className="nav-link">
                 Daya Tarik
               </Link>
             </li>
