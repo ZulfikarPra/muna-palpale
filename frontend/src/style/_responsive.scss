@@ -44,10 +44,17 @@
 
 @media screen and (max-width: 800px) {
   header {
-    background-color: transparent;
+    background-color: rgba(255, 255, 255, 0);
     box-shadow: none;
 
     .webProfile {
+      .webLogo {
+        img {
+          background-color: white;
+          border-radius: 50%;
+          padding: 0.2em;
+        }
+      }
       nav {
         position: relative;
         ul {
@@ -55,7 +62,6 @@
           flex-direction: column;
           background-color: aqua;
           position: absolute;
-          //   right: -200;
         }
       }
       .hamburgerMenu {
@@ -70,14 +76,21 @@
 // GALERI
 @media screen and (max-width: 800px) {
   .galeri {
+    // height: 50vh;
     .galeri-hero-image {
-      background-position: right;
+      background-image: url('../asset/galeri-header-mobile.png');
+      background-size: 100%;
+      background-repeat: no-repeat;
+      height: 80vh;
       h1 {
-        text-align: center;
+        font-size: 8rem;
+        top: 28%;
+        right: 50%;
+        transform: translate(50%, -50%);
       }
     }
     .galeri-content {
-      padding: 2em 1em;
+      padding: 1em 0;
     }
   }
 }

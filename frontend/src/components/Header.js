@@ -13,7 +13,7 @@ export const Header = () => {
     <header>
       <div className="webProfile" id="navigation-bar">
         <div className="webLogo">
-          <img src={logo512} alt="" className="webLogo" />
+          <img src={logo512} alt="" className="webLogo logo" />
           <Link to={'/'} className="nav-link-logo">
             Lanobake & Moolo
           </Link>
@@ -27,13 +27,15 @@ export const Header = () => {
             </li>
             <div className="dropdown">
               <li className="dropbtn">Tentang Desa</li>
-              <div className="dropdown-content">
-                <Link to={'/tentang-desa-lanobake'} className="nav-link">
-                  Desa Lanobake
-                </Link>
-                <Link to={'/tentang-desa-moolo'} className="nav-link">
-                  Desa Moolo
-                </Link>
+              <div className="dropdown-content-container">
+                <div className="dropdown-content">
+                  <Link to={'/tentang-desa-lanobake'} className="nav-link-drop lanobake">
+                    Desa Lanobake
+                  </Link>
+                  <Link to={'/tentang-desa-moolo'} className="nav-link-drop moolo">
+                    Desa Moolo
+                  </Link>
+                </div>
               </div>
             </div>
             <li>
