@@ -1,15 +1,19 @@
 .peta {
-  //   background-color: #59c1bd;
   .peta-jumbotron {
     background-image: url('../asset/peta-header.png');
-    padding: 6em 0 28em 3em;
+    position: relative;
+    height: 100vh;
+    background-position: bottom;
     h1 {
       font-family: Mango;
       font-size: 18vw;
-      // text-align: right;
       font-weight: 600;
       color: white;
-      // right: 0;
+      position: absolute;
+      top: 50%;
+      right: 50%;
+      transform: translate(120%, -40%);
+      background-position: bottom 100px;
     }
   }
 }
