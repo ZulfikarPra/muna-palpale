@@ -94,3 +94,19 @@
     }
   }
 }
+
+//TENTANG DESA LANOBAKE
+@media screen and (max-width: 800px) {
+  .tentang-desa{
+
+    .jumbotron{
+      h1{
+        font-size: 6rem;
+        line-height: 100px;
+      }
+    }
+    section{
+      padding: 0 3em;
+    }
+  }
+}

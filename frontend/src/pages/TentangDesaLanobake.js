@@ -1,6 +1,6 @@
 export const TentangDesaLanobake = () => {
   return (
-    <div className="tentang-desa-lanobake">
+    <div className="tentang-desa">
       <div className="jumbotron">
         <h1>
           Tentang <br />
