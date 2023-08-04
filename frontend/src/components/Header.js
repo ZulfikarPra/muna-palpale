@@ -7,6 +7,7 @@ export const Header = () => {
 
   const toggleHamburger = () => {
     setHamburgerOpen(!hamburgerOpen);
+    console.log(hamburgerOpen)
   };
 
   return (
@@ -18,7 +19,7 @@ export const Header = () => {
             Lanobake & Moolo
           </Link>
         </div>
-        <nav>
+        <nav className= {hamburgerOpen? "" : "hideNav"}>
           <ul>
             <li>
               <Link to={'/'} className="nav-link">
@@ -54,15 +55,15 @@ export const Header = () => {
                 Galeri
               </Link>
             </li>
-            <li>
-              <Link to={'/login'} className="nav-link nav-link-login">
+          </ul>
+              <Link to={'/login'} className="nav-link-login">
                 Login
               </Link>
-            </li>
-          </ul>
         </nav>
         <button className="hamburgerMenu" onClick={toggleHamburger}>
-          palpale
+              <span class="line line1"></span>
+              <span class="line line2"></span>
+              <span class="line line3"></span>
         </button>
       </div>
     </header>

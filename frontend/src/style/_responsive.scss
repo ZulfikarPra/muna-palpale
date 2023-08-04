@@ -42,13 +42,16 @@
 
 // HAMBURGER
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1000px) {
   header {
     background-color: rgba(255, 255, 255, 0);
     box-shadow: none;
-
+    
     .webProfile {
+      // background-color: green;
       .webLogo {
+        color: white;
+        transform: scale(.8);
         img {
           background-color: white;
           border-radius: 50%;
@@ -56,19 +59,103 @@
         }
       }
       nav {
-        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        position: absolute;
+        top: 0;
+        right: 0%;
+        background-color: white;
+        justify-content: space-between;
+        ;
+        height: 100vh;
+        width: 40%;
+        padding: 5em 0;
+        // position: relative;
+        .nav-link-login{
+          margin: 0 1.5em;
+        }
         ul {
-          display: none;
+          width: 100%;
+          gap: 0;
+          height: fit-content;
+          // background-color: red;
+
+          // display: none;
           flex-direction: column;
-          background-color: aqua;
-          position: absolute;
+          // text-align: left;
+          align-items:flex-start;
+          // justify-content: space-around;
+          // background-color: white;
+          opacity: 1;
+          // position: absolute;
+          .dropdown{
+            .dropdown-content{
+              position: static;
+              padding-top: 0;
+              padding-left: 2em;
+
+            }
+            cursor: pointer;
+            // background-color: red;
+            width: 100%;
+          }
+          li{
+            display: flex;
+            align-items: center;
+            .nav-link{
+              // background-color: red;
+              width: 100%;
+              height: 100%;
+              display: flex;
+              align-items: center;
+              // justify-content: center;
+            }
+            height: 60px;
+            padding: 0 1.5em;
+            width: 100%;
+            &:hover{
+            background: linear-gradient(#59c1bd, #0883b2);
+            color: white !important;
+            & .nav-link{
+              color: white !important;
+            }
+            }
+          }
+          
         }
       }
       .hamburgerMenu {
-        display: inline;
-        background-color: red;
-        right: 0;
+        z-index: 999;
+        cursor: pointer;
+        outline: none;
+        border: 0px ;
+        width: 50px;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        background-color: transparent;
+        // background-color: red;
+        gap: 8px;
+        span{
+          border-radius: 30px;
+          height: 5px;
+          width: 35px;
+          background-color: white;
+
+        }
+        // right: 0;
       }
+    }
+  }
+}
+@media screen and (max-width : 800px){
+  .webProfile{
+    padding: 0 !important;
+    .webLogo{
+      // background-color: red;
     }
   }
 }

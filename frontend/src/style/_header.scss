@@ -1,6 +1,9 @@
+.hideNav{
+  right: -100% !important;
+}
 header {
   background-color: rgba(255, 255, 255, 0.738);
-  opacity: 80%;
+  // opacity: 80%;
   width: 100%;
   height: 80px;
   position: fixed;
@@ -12,6 +15,7 @@ header {
     height: 100%;
     width: 100%;
     display: flex;
+    align-items: center;
     justify-content: space-between;
     padding: 0 3em;
     .webLogo {
@@ -19,7 +23,9 @@ header {
       align-items: center;
       gap: 13px;
       img {
-        height: 60%;
+        height: 55px;
+        width: 55px;
+        border-radius: 50%;
       }
       .nav-link-logo {
         text-decoration: none;
@@ -30,7 +36,20 @@ header {
       }
     }
     nav {
+      display: flex;
+      gap: 30px;
       width: fit-content;
+      align-items: center;
+      .nav-link-login {
+        background: linear-gradient(#59c1bd, #0883b2);
+        padding: 0.5rem 1.2rem;
+        color: white;
+        border-radius: 1.5rem;
+        color: white;
+        text-decoration: none;
+        font-family: Black Mango;
+        font-weight: bolder;
+      }
       ul {
         height: 100%;
         display: flex;
@@ -44,12 +63,6 @@ header {
             color: black;
             font-family: Black Mango;
             font-weight: 700;
-          }
-          .nav-link-login {
-            background: linear-gradient(#59c1bd, #0883b2);
-            padding: 0.5rem 1.2rem;
-            color: white;
-            border-radius: 1.5rem;
           }
         }
 
@@ -91,7 +104,8 @@ header {
         }
 
         .dropdown-content :hover {
-          background-color: #ddd;
+            background: linear-gradient(#59c1bd, #0883b2);
+            color: white;
           // border-radius: 0.5rem;
         }
 
@@ -102,7 +116,11 @@ header {
     }
     .hamburgerMenu {
       display: none;
-      background-color: rebeccapurple;
+      // background-color: rebeccapurple;
     }
   }
+}
+
+.hidden{
+  display: none !important;
 }
