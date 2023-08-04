@@ -1,9 +1,11 @@
 export const TentangDesaLanobake = () => {
   return (
-    <div className="tentang-desa">
+    <div className="tentang-desa-lanobake">
       <div className="jumbotron">
-        <h1>Tentang <br />Desa</h1>
-        {/* <h1>Jhony</h1> */}
+        <h1>
+          Tentang <br />
+          Desa
+        </h1>
       </div>
       <section id="judulDesa">
         <h2>Desa Lanobake</h2>
@@ -13,7 +15,10 @@ export const TentangDesaLanobake = () => {
       </section>
       <section id="visiMisi">
         <h2>Visi</h2>
-        <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci impedit praesentium ex facilis, illo, laudantium dignissimos, tempora similique ab nulla accusamus voluptates quo nihil ipsam. Ab eligendi aut libero sint sequi esse voluptatibus quia sunt! Cum inventore, praesentium exercitationem ullam distinctio perspiciatis itaque. Quidem fuga soluta sit, asperiores necessitatibus illo.</h4>
+        <h4>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci impedit praesentium ex facilis, illo, laudantium dignissimos, tempora similique ab nulla accusamus voluptates quo nihil ipsam. Ab eligendi aut libero sint sequi
+          esse voluptatibus quia sunt! Cum inventore, praesentium exercitationem ullam distinctio perspiciatis itaque. Quidem fuga soluta sit, asperiores necessitatibus illo.
+        </h4>
         <h2>Misi</h2>
         <ol>
           <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eligendi cupiditate, rem maiores error blanditiis culpa, voluptates magnam quibusdam provident alias eum ut magni sequi officia iste accusantium laborum veritatis molestias saepe, sint similique fugiat odit recusandae at. Impedit eligendi ab aliquam fugiat illo similique, cum expedita aspernatur consequatur nam. Dolore reprehenderit aspernatur culpa similique necessitatibus illo a soluta! Animi nihil laborum voluptas, fuga cum incidunt harum aliquam quam! Laboriosam eveniet aspernatur temporibus magnam. Numquam, recusandae? Iusto ab porro repellat laborum tenetur quaerat ad architecto illum dolor illo officiis libero, enim est perspiciatis dicta maxime asperiores, esse vel itaque unde excepturi quidem, quo distinctio. Odit, dolorum vel similique maiores dolorem minus explicabo vitae amet cum illum enim eligendi alias sed eius ut est voluptas praesentium in illo atque molestiae possimus non. Minima, non sequi. Aliquid distinctio, eum reiciendis asperiores iste dolores! Tempore nemo eligendi velit quisquam, laudantium harum necessitatibus corrupti reprehenderit.</li>
@@ -56,7 +61,7 @@ export const TentangDesaLanobake = () => {
       <section id="peraturanDesa">
         <h2>Peraturan Desa</h2>
         <div className="pdfViewer">
-          
+
         </div>
       </section>
     </div>

@@ -5,7 +5,6 @@ import { Login } from './pages/Login';
 import { Register } from './pages/Register';
 import { Header } from './components/Header';
 import 'leaflet/dist/leaflet.css';
-import { Artikel } from './pages/Artikel';
 import { Galeri } from './pages/Galeri';
 import { Peta } from './pages/Peta';
 import { TentangDesaMoolo } from './pages/TentangDesaMoolo';
@@ -21,7 +20,6 @@ function App() {
           <Route path="/" element={<Home></Home>}></Route>
           <Route path="/login" element={<Login></Login>}></Route>
           <Route path="/register" element={<Register></Register>}></Route>
-          <Route path="/artikel" element={<Artikel></Artikel>}></Route>
           <Route path="/galeri" element={<Galeri></Galeri>}></Route>
           <Route path="/peta" element={<Peta></Peta>}></Route>
           <Route path="/daya-tarik" element={<DayaTarik></DayaTarik>}></Route>
