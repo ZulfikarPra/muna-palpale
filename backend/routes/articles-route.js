@@ -28,6 +28,10 @@ router.route('/create').post(upload.array('photos'), async (req, res) => {
     console.log(req.files);
     for (let i = 0; i < req.files.length; i++) {
       const file = req.files[i];
+      if (file.size > (1024 * 1024 * 8)) {
+        res.status(400).json({'message': 'File too large'});
+        return;
+      };
       const dataURI = 'data:' + file.mimetype + ';base64,' + file.buffer.toString('base64');
       picturesURL.push(await handleUpload(dataURI));
     }
