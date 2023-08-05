@@ -35,36 +35,16 @@ const getFilteredArticles = asyncHandler(async (req, res) => {
   }
 });
 
-const createArticle = asyncHandler(async (req, res) => {
-  const {
-    title,
-    content,
-    tags,
-    picture,
-  } = req.body;
-
-  const images = req.files;
-
-  const pointImage = images['photos'];
-  console.log(pointImage);
-
+// eslint-disable-next-line require-jsdoc
+async function createArticle(title, content, tags, picture) {
   const article = await Article.create({
     title,
     content,
     tags,
     picture,
   });
-
-  if (article) {
-    res.status(201).json({
-      _id: article._id,
-      title: article.title,
-      content: article.content,
-      tags: article.tags,
-      picture: article.picture,
-    });
-  }
-});
+  return article;
+}
 
 const updateArticle = asyncHandler(async (req, res) => {
   const article = await Article.findById(req.params.id);
@@ -104,11 +84,10 @@ const deleteArticle = asyncHandler(async (req, res) => {
 
 // eslint-disable-next-line require-jsdoc
 async function handleUpload(file) {
-  //console.log(file);
   const uploadResponse = await cloudinary.uploader.upload(file, {
     resource_type: 'image',
   });
-  console.log(uploadResponse);
+  return uploadResponse.url;
 }
 
 module.exports = {

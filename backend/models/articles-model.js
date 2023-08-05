@@ -27,7 +27,7 @@ const articleSchema = mongoose.Schema({
     default: Date.now,
   },
   picture: {
-    type: String,
+    type: Array,
   },
 }
 , {
