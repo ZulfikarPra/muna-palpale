@@ -25,7 +25,6 @@ router.route('/create').post(upload.array('photos'), async (req, res) => {
   try {
     // Implement this on FE with FormData
     const picturesURL = [];
-    console.log(req.files);
     for (let i = 0; i < req.files.length; i++) {
       const file = req.files[i];
       if (file.size > (1024 * 1024 * 8)) {
