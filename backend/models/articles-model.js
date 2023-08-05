@@ -14,7 +14,7 @@ const articleSchema = mongoose.Schema({
     required: true,
   },
   tags: {
-    type: Array,
+    type: String,
   },
   likes: {
     type: Number,
