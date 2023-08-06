@@ -1,6 +1,7 @@
 .daya-tarik {
   background-color: #59c1bd;
-  height: 100vh;
+  // height: 100vh;
+  height: 100%;
 
   .daya-tarik-jumbotron {
     h1 {
@@ -19,8 +20,8 @@
     justify-content: center;
     margin-top: 5em;
     button {
-      background-color: #0f3057;
-      color: white;
+      background-color: $oren;
+      color: black;
       padding: 0.6em 1em;
       font-family: Mango;
       font-weight: 600;
@@ -32,5 +33,13 @@
       background-color: white;
       color: #0f3057;
     }
+  }
+  .daya-tarik-content {
+    display: flex;
+    gap: 2em;
+    // align-items: center;
+    justify-content: center;
+    // justify-content: space-between;
+    padding: 5em;
   }
 }
