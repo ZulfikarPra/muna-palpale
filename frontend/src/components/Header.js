@@ -7,7 +7,7 @@ export const Header = () => {
 
   const toggleHamburger = () => {
     setHamburgerOpen(!hamburgerOpen);
-    console.log(hamburgerOpen)
+    console.log(hamburgerOpen);
   };
 
   return (
@@ -16,10 +16,10 @@ export const Header = () => {
         <div className="webLogo">
           <img src={logo512} alt="" className="webLogo logo" />
           <Link to={'/'} className="nav-link-logo">
-            Lanobake & Moolo
+            Kembara Batukara
           </Link>
         </div>
-        <nav className= {hamburgerOpen? "" : "hideNav"}>
+        <nav className={hamburgerOpen ? '' : 'hideNav'}>
           <ul>
             <li>
               <Link to={'/'} className="nav-link">
@@ -56,14 +56,14 @@ export const Header = () => {
               </Link>
             </li>
           </ul>
-              <Link to={'/login'} className="nav-link-login">
-                Login
-              </Link>
+          <Link to={'/login'} className="nav-link-login">
+            Login
+          </Link>
         </nav>
         <button className="hamburgerMenu" onClick={toggleHamburger}>
-              <span class="line line1"></span>
-              <span class="line line2"></span>
-              <span class="line line3"></span>
+          <span class="line line1"></span>
+          <span class="line line2"></span>
+          <span class="line line3"></span>
         </button>
       </div>
     </header>
