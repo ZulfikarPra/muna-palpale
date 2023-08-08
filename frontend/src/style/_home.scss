@@ -1,5 +1,5 @@
 .beranda {
-  background-color: #59c1bd;
+  background-color: $aqua;
   height: 100vh;
   h1 {
     font-family: 'Croissant One';
@@ -11,7 +11,7 @@
     padding: 1rem;
     border-radius: 1rem;
     border: none;
-    background-color: #0f3057;
+    background-color: $dark-blue;
     color: white;
   }
 }

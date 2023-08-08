@@ -1,4 +1,4 @@
-.hideNav{
+.hideNav {
   right: -100% !important;
 }
 header {
@@ -41,7 +41,7 @@ header {
       width: fit-content;
       align-items: center;
       .nav-link-login {
-        background: linear-gradient(#59c1bd, #0883b2);
+        background: linear-gradient($aqua, $blue);
         padding: 0.5rem 1.2rem;
         color: white;
         border-radius: 1.5rem;
@@ -104,8 +104,8 @@ header {
         }
 
         .dropdown-content :hover {
-            background: linear-gradient(#59c1bd, #0883b2);
-            color: white;
+          background: linear-gradient($aqua, $blue);
+          color: white;
           // border-radius: 0.5rem;
         }
 
@@ -121,6 +121,6 @@ header {
   }
 }
 
-.hidden{
+.hidden {
   display: none !important;
 }

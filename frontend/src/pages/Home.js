@@ -7,13 +7,13 @@ export const Home = () => {
   return (
     <div className="beranda">
       <h1>Beranda</h1>
-      <Link to={'/login'}>
+      {/* <Link to={'/login'}>
         <button>Login</button>
       </Link>
       <Link to={'/register'}>
         <button>Register</button>
       </Link>
-      <button onClick={() => dispatch(logout())}>Logout</button>
+      <button onClick={() => dispatch(logout())}>Logout</button> */}
     </div>
   );
 };

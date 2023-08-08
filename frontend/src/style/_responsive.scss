@@ -46,12 +46,12 @@
   header {
     background-color: rgba(255, 255, 255, 0);
     box-shadow: none;
-    
+
     .webProfile {
       // background-color: green;
       .webLogo {
         color: white;
-        transform: scale(.8);
+        transform: scale(0.8);
         img {
           background-color: white;
           border-radius: 50%;
@@ -67,12 +67,11 @@
         right: 0%;
         background-color: white;
         justify-content: space-between;
-        ;
         height: 100vh;
         width: 40%;
         padding: 5em 0;
         // position: relative;
-        .nav-link-login{
+        .nav-link-login {
           margin: 0 1.5em;
         }
         ul {
@@ -84,26 +83,25 @@
           // display: none;
           flex-direction: column;
           // text-align: left;
-          align-items:flex-start;
+          align-items: flex-start;
           // justify-content: space-around;
           // background-color: white;
           opacity: 1;
           // position: absolute;
-          .dropdown{
-            .dropdown-content{
+          .dropdown {
+            .dropdown-content {
               position: static;
               padding-top: 0;
               padding-left: 2em;
-
             }
             cursor: pointer;
             // background-color: red;
             width: 100%;
           }
-          li{
+          li {
             display: flex;
             align-items: center;
-            .nav-link{
+            .nav-link {
               // background-color: red;
               width: 100%;
               height: 100%;
@@ -114,22 +112,21 @@
             height: 60px;
             padding: 0 1.5em;
             width: 100%;
-            &:hover{
-            background: linear-gradient(#59c1bd, #0883b2);
-            color: white !important;
-            & .nav-link{
+            &:hover {
+              background: linear-gradient(#59c1bd, #0883b2);
               color: white !important;
-            }
+              & .nav-link {
+                color: white !important;
+              }
             }
           }
-          
         }
       }
       .hamburgerMenu {
         z-index: 999;
         cursor: pointer;
         outline: none;
-        border: 0px ;
+        border: 0px;
         width: 50px;
         height: 50px;
         display: flex;
@@ -139,22 +136,21 @@
         background-color: transparent;
         // background-color: red;
         gap: 8px;
-        span{
+        span {
           border-radius: 30px;
           height: 5px;
           width: 35px;
           background-color: white;
-
         }
         // right: 0;
       }
     }
   }
 }
-@media screen and (max-width : 800px){
-  .webProfile{
+@media screen and (max-width: 800px) {
+  .webProfile {
     padding: 0 !important;
-    .webLogo{
+    .webLogo {
       // background-color: red;
     }
   }
@@ -184,16 +180,41 @@
 
 //TENTANG DESA LANOBAKE
 @media screen and (max-width: 800px) {
-  .tentang-desa{
-
-    .jumbotron{
-      h1{
+  .tentang-desa {
+    .jumbotron {
+      h1 {
         font-size: 6rem;
         line-height: 100px;
       }
     }
-    section{
+    section {
       padding: 0 3em;
+    }
+  }
+}
+
+// CARD
+@media screen and (max-width: 800px) {
+}
+
+// DAYA TARIK
+@media screen and (max-width: 800px) {
+  .daya-tarik-content {
+    flex-direction: column;
+    padding: 0;
+    gap: 0;
+    justify-content: space-between;
+    width: 100%;
+    .card-left-container,
+    .card-right-container {
+      width: 100%;
+      .card-content {
+        .card-btn-container {
+          .card-btn {
+            width: 50%;
+          }
+        }
+      }
     }
   }
 }
