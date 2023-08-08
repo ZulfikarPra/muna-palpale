@@ -1,5 +1,6 @@
 import { CardLeft } from '../components/CardLeft';
 import { CardRight } from '../components/CardRight';
+import { BahasaMuna } from '../components/BahasaMuna';
 
 export const DayaTarik = () => {
   return (
@@ -18,6 +19,7 @@ export const DayaTarik = () => {
         <CardLeft></CardLeft>
         <CardRight></CardRight>
       </div>
+      <BahasaMuna></BahasaMuna>
     </div>
   );
 };

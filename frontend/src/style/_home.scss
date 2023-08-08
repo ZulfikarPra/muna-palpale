@@ -1,17 +1,38 @@
 .beranda {
-  background-color: $aqua;
-  height: 100vh;
-  h1 {
-    font-family: 'Croissant One';
-    font-size: 15rem;
+  box-sizing: border-box;
+  .beranda-jumbotron {
+    height: 100vh;
+    background: url('../asset/beranda-header.png');
     text-align: center;
-    font-weight: 500;
-  }
-  button {
-    padding: 1rem;
-    border-radius: 1rem;
-    border: none;
-    background-color: $dark-blue;
-    color: white;
+    position: relative;
+    .beranda-jumbotron-title {
+      position: absolute;
+      right: 50%;
+      transform: translate(50%, 30%);
+      background: rgb(255, 255, 255);
+      background: radial-gradient(rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 72%);
+      padding: 5em;
+      h1 {
+        font-family: Mango;
+        font-size: 10rem;
+        background: linear-gradient($dark-blue, $tosca);
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        line-height: 0.8em;
+      }
+      button {
+        background-color: $oren;
+        padding: 0.3em 0.8em;
+        font-family: Mango;
+        font-weight: 600;
+        font-size: xx-large;
+        border: none;
+        border-radius: 2em;
+        margin-top: 1.5em;
+      }
+      .kembara {
+        font-size: 6rem;
+      }
+    }
   }
 }

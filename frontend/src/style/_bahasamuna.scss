@@ -1,0 +1,43 @@
+.bahasa-muna {
+  .sejarah-singkat,
+  .aturan-bahasa,
+  .penggunaan-bahasa {
+    h2 {
+      color: white;
+      font-size: 8rem;
+      font-weight: 600;
+      font-family: Mango;
+    }
+  }
+
+  .sejarah-singkat {
+    display: flex;
+    gap: 2em;
+    justify-content: space-between;
+    padding: 4em;
+    .sejarah-content {
+      background-color: white;
+      padding: 1em;
+      border-radius: 1em;
+      p {
+        margin: 1em;
+      }
+    }
+  }
+
+  .aturan-bahasa {
+    display: flex;
+    flex-direction: column;
+    // justify-content: right;
+    align-items: end;
+    padding: 0 5em;
+    .aturan-content {
+      background-color: white;
+      padding: 1em;
+      border-radius: 1em;
+      p {
+        margin: 1em;
+      }
+    }
+  }
+}
