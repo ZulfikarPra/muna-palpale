@@ -36,34 +36,32 @@ const getFilteredArticles = asyncHandler(async (req, res) => {
 });
 
 const createArticle = asyncHandler(async (req, res) => {
-  const {
-    title,
-    content,
-    tags,
-    picture,
-  } = req.body;
-
-  const images = req.files;
-
-  const pointImage = images['photos'];
-  console.log(pointImage);
-
-  const article = await Article.create({
-    title,
-    content,
-    tags,
-    picture,
-  });
-
-  if (article) {
-    res.status(201).json({
-      _id: article._id,
-      title: article.title,
-      content: article.content,
-      tags: article.tags,
-      picture: article.picture,
-    });
+  console.log(req.files);
+  console.log(req.body);
+  const pictureURL = [];
+  try {
+    for (let i = 0; i < req.files.length; i++) {
+      const file = req.files[i];
+      if (file.size > (1024 * 1024 * 8)) {
+        res.status(400).json({'message': 'File too large'});
+        return;
+      }
+      const dataURI = 'data:' + file.mimetype + ';base64,' + file.buffer.toString('base64');
+      const uploadResponse = await cloudinary.uploader.upload(dataURI, {
+        resource_type: 'image',
+      });
+      pictureURL.push(uploadResponse.url);
+    }
+  } catch (error) {
+    res.status(400).json({'message': error.message});
   }
+  const article = await Article.create({
+    title: req.body.title,
+    content: req.body.content,
+    tags: req.body.tags,
+    picture: pictureURL,
+  });
+  res.status(200).json(article);
 });
 
 const updateArticle = asyncHandler(async (req, res) => {
@@ -102,15 +100,6 @@ const deleteArticle = asyncHandler(async (req, res) => {
   }
 });
 
-// eslint-disable-next-line require-jsdoc
-async function handleUpload(file) {
-  //console.log(file);
-  const uploadResponse = await cloudinary.uploader.upload(file, {
-    resource_type: 'image',
-  });
-  console.log(uploadResponse);
-}
-
 module.exports = {
   getArticles,
   getArticleById,
@@ -118,5 +107,4 @@ module.exports = {
   createArticle,
   updateArticle,
   deleteArticle,
-  handleUpload,
 };

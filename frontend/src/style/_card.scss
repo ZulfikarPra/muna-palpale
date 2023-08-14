@@ -1,0 +1,99 @@
+.card-left-container {
+  //   background-color: red;
+  border-radius: 1em 0 0 0;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  width: 45%;
+  background-color: white;
+  //   border: 1px solid black;
+  .card-img {
+    img {
+      width: 100%;
+    }
+  }
+  .card-content {
+    display: flex;
+    flex: 1 1 auto;
+    flex-direction: column;
+    padding: 1em;
+    gap: 1em;
+    // text-align: left;
+    // align-items: end;
+    .card-title {
+      //   color: green;
+      font-size: 1.25rem;
+      font-family: Mango;
+      font-weight: 600;
+    }
+    .card-text {
+      flex: 1 1 auto;
+      font-size: 0.875rem;
+    }
+    .card-btn-container {
+      display: flex;
+      align-items: end;
+      text-align: right;
+      .card-btn {
+        width: 20%;
+        background-color: $oren;
+        border: none;
+        font-family: Mango;
+        font-size: 1rem;
+        font-weight: 600;
+        padding: 0.5rem 0;
+        border-radius: 1em;
+        //   align-items: flex-end;
+      }
+    }
+  }
+}
+
+.card-right-container {
+  border-radius: 0 1em 0 0;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  width: 45%;
+  background-color: white;
+  .card-img {
+    img {
+      width: 100%;
+    }
+  }
+  .card-content {
+    display: flex;
+    flex: 1 1 auto;
+    flex-direction: column;
+    padding: 1em;
+    gap: 0.8em;
+    // text-align: left;
+    // align-items: end;
+    .card-title {
+      //   color: green;
+      font-size: 1.25rem;
+      font-family: Mango;
+      font-weight: 600;
+    }
+    .card-text {
+      flex: 1 1 auto;
+      font-size: 0.875rem;
+    }
+    .card-btn-container {
+      display: flex;
+      align-items: end;
+      text-align: right;
+      .card-btn {
+        width: 20%;
+        background-color: $oren;
+        border: none;
+        font-family: Mango;
+        font-size: 1rem;
+        font-weight: 600;
+        padding: 0.5rem 0;
+        border-radius: 1em;
+        //   align-items: flex-end;
+      }
+    }
+  }
+}

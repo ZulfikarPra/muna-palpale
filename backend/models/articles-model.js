@@ -14,7 +14,7 @@ const articleSchema = mongoose.Schema({
     required: true,
   },
   tags: {
-    type: Array,
+    type: String,
   },
   likes: {
     type: Number,
@@ -27,7 +27,7 @@ const articleSchema = mongoose.Schema({
     default: Date.now,
   },
   picture: {
-    type: String,
+    type: Array,
   },
 }
 , {

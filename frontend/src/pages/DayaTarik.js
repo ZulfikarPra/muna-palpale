@@ -1,3 +1,7 @@
+import { CardLeft } from '../components/CardLeft';
+import { CardRight } from '../components/CardRight';
+import { BahasaMuna } from '../components/BahasaMuna';
+
 export const DayaTarik = () => {
   return (
     <div className="daya-tarik">
@@ -11,7 +15,11 @@ export const DayaTarik = () => {
         <button>Makanan Khas</button>
         <button>Bahasa Muna</button>
       </div>
-      <div className="daya-tarik-content"></div>
+      <div className="daya-tarik-content">
+        <CardLeft></CardLeft>
+        <CardRight></CardRight>
+      </div>
+      <BahasaMuna></BahasaMuna>
     </div>
   );
 };

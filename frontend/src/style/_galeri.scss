@@ -6,6 +6,7 @@
     background-size: cover;
     position: relative;
     height: 100vh;
+    // background-position: center;
     h1 {
       font-family: Mango;
       font-size: 18vw;
@@ -14,6 +15,7 @@
       color: white;
       position: absolute;
       transform: translate(10%, 30%);
+      text-shadow: 4px 4px 5px rgba(0, 0, 0, 0.505);
     }
   }
   .galeri-content {

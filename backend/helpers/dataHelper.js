@@ -1,3 +1,4 @@
+/* eslint-disable new-cap */
 const Multer = require('multer');
 
 const storage = new Multer.memoryStorage();
