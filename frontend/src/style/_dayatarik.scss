@@ -2,25 +2,32 @@
   background-color: $aqua;
   // height: 100vh;
   height: 100%;
-  padding-top: 15em;
+  // padding-top: 15em;
 
   .daya-tarik-jumbotron {
     background-image: url('../asset/daya-tarik-header.png');
-    background-size: cover;
+    // background-color: red;
+    background-size: 90%;
+    background-position: center 200px;
+    background-repeat: no-repeat;
+
     position: relative;
-    height: 100vh;
+    height: 106vh;
+    // z-index: 2;
     // padding-top: 5em;
     h1 {
+      // z-index: -1;
       font-family: Mango;
-      font-size: 18vw;
+      font-size: 15vw;
       text-align: center;
       font-weight: 600;
       color: white;
       // padding-top: 15rem;
       position: absolute;
-      // top: 50%;
-      // right: 50%;
-      transform: translate(10%, -50%);
+      top: 50%;
+      right: 50%;
+      transform: translate(50%, -105%);
+      text-shadow: 4px 4px 5px rgba(0, 0, 0, 0.301);
     }
   }
 
@@ -32,7 +39,7 @@
     padding: 5em 10em;
     button {
       background-color: $oren;
-      color: black;
+      color: white;
       padding: 0.6em 1em;
       font-family: Mango;
       font-weight: 600;
@@ -42,7 +49,7 @@
     }
     button:hover {
       background-color: white;
-      color: $dark-blue;
+      color: $oren;
     }
   }
   .daya-tarik-content {
