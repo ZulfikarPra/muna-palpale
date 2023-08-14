@@ -160,20 +160,22 @@
 @media screen and (max-width: 800px) {
   .galeri {
     // height: 50vh;
+    // background-color: red;
     .galeri-hero-image {
       background-image: url('../asset/galeri-header-mobile.png');
       background-size: 100%;
       background-repeat: no-repeat;
-      height: 80vh;
+      height: 55vh;
+      // background-color: #0883b2;
       h1 {
-        font-size: 8rem;
-        top: 28%;
+        font-size: 6.5rem;
+        top: 50%;
         right: 50%;
-        transform: translate(50%, -50%);
+        transform: translate(50%, -100%);
       }
     }
     .galeri-content {
-      padding: 1em 0;
+      // padding: 1em 0;
     }
   }
 }
