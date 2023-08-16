@@ -22,6 +22,7 @@
       text-align: center;
       font-weight: 600;
       color: white;
+      white-space: nowrap;
       // padding-top: 15rem;
       position: absolute;
       top: 50%;
@@ -32,24 +33,27 @@
   }
 
   .daya-tarik-button {
-    display: flex;
-    // gap: 2em;
-    justify-content: space-between;
-    // margin-top: 5em;
-    padding: 5em 10em;
-    button {
-      background-color: $oren;
-      color: white;
-      padding: 0.6em 1em;
-      font-family: Mango;
-      font-weight: 600;
-      font-size: 1.5vw;
-      border: none;
-      border-radius: 2em;
-    }
-    button:hover {
-      background-color: white;
-      color: $oren;
+    ul {
+      display: flex;
+      justify-content: space-between;
+      padding: 5em 10em;
+      list-style-type: none;
+      li {
+        button {
+          background-color: $oren;
+          color: white;
+          padding: 0.6em 1em;
+          font-family: Mango;
+          font-weight: 600;
+          font-size: 1.5vw;
+          border: none;
+          border-radius: 2em;
+        }
+        button:hover {
+          background-color: white;
+          color: $oren;
+        }
+      }
     }
   }
   .daya-tarik-content {

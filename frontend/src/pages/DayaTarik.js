@@ -6,14 +6,24 @@ export const DayaTarik = () => {
   return (
     <div className="daya-tarik">
       <div className="daya-tarik-jumbotron">
-        <h1>DayaTarik</h1>
+        <h1>Daya Tarik</h1>
       </div>
 
       <div className="daya-tarik-button">
-        <button>Alam Desa</button>
-        <button>Sosial Budaya</button>
-        <button>Makanan Khas</button>
-        <button>Bahasa Muna</button>
+        <ul>
+          <li>
+            <button>Alam Desa</button>
+          </li>
+          <li>
+            <button>Sosial Budaya</button>
+          </li>
+          <li>
+            <button>Makanan Khas</button>
+          </li>
+          <li>
+            <button>Bahasa Muna</button>
+          </li>
+        </ul>
       </div>
       <div className="daya-tarik-content">
         <CardLeft></CardLeft>
