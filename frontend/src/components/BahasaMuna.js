@@ -36,9 +36,46 @@ export const BahasaMuna = () => {
           </p>
         </div>
       </div>
-      <div className="penggunaan-bahasa">
-        <h2>Penggunaan Bahasa</h2>
-        <div className="penggunaan-tabel"></div>
+      <div className="mini-kamus">
+        <h2>Mini Kamus</h2>
+        <div className="mini-kamus-content">
+          <table>
+            <thead>
+              <tr>
+                <th>No</th>
+                <th>Bahasa Indonesia</th>
+                <th>Bahasa Muna</th>
+                <th>Contoh Kalimat</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th>p</th>
+                <th>p</th>
+                <th>p</th>
+                <th>p</th>
+              </tr>
+              <tr>
+                <th>p</th>
+                <th>p</th>
+                <th>p</th>
+                <th>p</th>
+              </tr>
+              <tr>
+                <th>p</th>
+                <th>p</th>
+                <th>p</th>
+                <th>p</th>
+              </tr>
+              <tr>
+                <th>p</th>
+                <th>p</th>
+                <th>p</th>
+                <th>p</th>
+              </tr>
+            </tbody>
+          </table>
+        </div>
       </div>
     </div>
   );

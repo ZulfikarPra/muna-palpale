@@ -1,7 +1,7 @@
 .bahasa-muna {
   .sejarah-singkat,
   .aturan-bahasa,
-  .penggunaan-bahasa {
+  .mini-kamus {
     h2 {
       color: white;
       font-size: 8rem;
@@ -14,9 +14,9 @@
     display: flex;
     gap: 2em;
     justify-content: space-between;
-    padding: 4em;
+    padding: 0 5em;
     .sejarah-content {
-      background-color: white;
+      background-color: rgba(255, 255, 255, 0.502);
       padding: 1em;
       border-radius: 1em;
       p {
@@ -32,11 +32,41 @@
     align-items: end;
     padding: 0 5em;
     .aturan-content {
-      background-color: white;
+      background-color: rgba(255, 255, 255, 0.507);
       padding: 1em;
       border-radius: 1em;
       p {
         margin: 1em;
+      }
+    }
+  }
+}
+
+.mini-kamus {
+  text-align: center;
+  // align-items: center;
+  .mini-kamus-content {
+    table,
+    th,
+    td {
+      border: 2px solid $oren;
+
+      border-collapse: collapse;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    th,
+    td {
+      padding: 1em;
+    }
+    table {
+      // border-radius: 10px;
+      width: 80%;
+      thead {
+        background-color: $oren;
+      }
+      tbody {
+        background-color: white;
       }
     }
   }

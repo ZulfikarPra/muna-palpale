@@ -19,7 +19,7 @@ export const DayaTarik = () => {
         <CardLeft></CardLeft>
         <CardRight></CardRight>
       </div>
-      <BahasaMuna></BahasaMuna>
+      {/* <BahasaMuna></BahasaMuna> */}
     </div>
   );
 };

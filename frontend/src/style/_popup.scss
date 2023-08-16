@@ -1,0 +1,70 @@
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  overflow-y: auto;
+  background-color: rgba(0, 0, 0, 0.2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .popup-inner {
+    position: relative;
+    width: 100%;
+    max-width: 640px;
+    background-color: white;
+    border-radius: 1em;
+    top: 10%;
+    transform: translateY(10%);
+  }
+
+  .popup-inner .close-btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: $oren;
+    border: none;
+    color: white;
+    padding: 0.2em 0.5em;
+    border-radius: 50%;
+    font-size: 1.5rem;
+    position: absolute;
+    transform: translate(50%, -50%);
+  }
+
+  .popup-content {
+    display: flex;
+    gap: 1.5em;
+    flex-direction: column;
+    padding: 32px;
+
+    .judul-artikel {
+      background-color: $aqua;
+      border-radius: 1em;
+      padding: 0.2em 1em;
+    }
+
+    .gambar-artikel {
+      .img-dummy {
+        background-color: red;
+        //   border: 1px solid black;
+        height: 300px;
+      }
+    }
+  }
+
+  .popup-footer {
+    background-color: $aqua;
+    padding: 1.2em;
+    display: flex;
+    border-radius: 2em 2em 0 0;
+    gap: 0.5em;
+    .logo-dummy {
+      height: 40px;
+      width: 40px;
+      background-color: black;
+    }
+  }
+}
