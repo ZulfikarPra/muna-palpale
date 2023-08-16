@@ -3,6 +3,10 @@ import { Link } from 'react-router-dom';
 // import { logout } from '../actions/userActions';
 import imageBeranda1 from '../asset/beranda-image-1.png';
 import imageBeranda2 from '../asset/beranda-image-2.png';
+import imageDayaTarik1 from '../asset/beranda-dayatarik-1.png';
+import imageDayaTarik2 from '../asset/beranda-dayatarik-2.png';
+import petaWilayahImage from '../asset/petaWilayahImage.png';
+import imageDayaTarik3 from '../asset/beranda-dayatarik-3.png';
 import arrow from '../asset/arrow.png';
 // import imageBeranda2 from '../asset/beranda-image2.png'
 export const Home = () => {
@@ -52,7 +56,40 @@ export const Home = () => {
       </div>
       <h2 className='dayaTarik-h2'>Daya Tarik</h2>
       <div className="dayaTarik">
-        
+        <div className="dayaTarik-inner">
+          <div className="cardContainer">
+            <div className="card">
+              <div className="img">
+                <img src={imageDayaTarik1} alt="" />
+              </div>
+              <h4>KABHANTAPI : PERCANTIK DIRI BERBALUT KRIYA ALA MUNA</h4>
+            </div>
+            <div className="card">
+              <div className="img">
+                <img src={imageDayaTarik2} alt="" />
+              </div>
+              <h4>KABHANTAPI : PERCANTIK DIRI BERBALUT KRIYA ALA MUNA</h4>
+            </div>
+            <div className="card">
+              <div className="img">
+                <img src={imageDayaTarik3} alt="" />
+              </div>
+              <h4>KABHANTAPI : PERCANTIK DIRI BERBALUT KRIYA ALA MUNA</h4>
+            </div>
+          </div>
+            <Link className="rm-dayatarik">
+            <p>Read More</p>
+            <div className="img">
+              <img src={arrow} alt="" />
+            </div>
+          </Link>
+        </div>
+      </div>
+      <div className="petaWilayah">
+        <h2>Peta <br /> Wilayah</h2>
+        <div className="img">
+            <img src={petaWilayahImage} alt="" />
+        </div>
       </div>
     </div>
   );

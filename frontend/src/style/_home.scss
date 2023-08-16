@@ -1,6 +1,7 @@
 .beranda {
   box-sizing: border-box;
   height: 1000vh;
+  width: 100%;
   h2{
     font-family: Mango;
     padding: 0 88px;
@@ -131,38 +132,144 @@
         // background-color: green;
       }
     }
-    .readMore{
+  }
+  .readMore{
+    transition: .3s ease;
+    &:hover{
+      transform: scale(1.1);
       transition: .3s ease;
-      &:hover{
-        transform: scale(1.1);
-        transition: .3s ease;
-      }
-      // color
-      // background-color: red;
-      width: fit-content;
-      margin-left: auto;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: $dark-blue;
-      text-decoration: none;
-      gap: 10px;
-      p{
+    }
+    // color
+    // background-color: red;
+    width: fit-content;
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: $dark-blue;
+    text-decoration: none;
+    gap: 10px;
+    p{
 
-        font-size: 1.2rem;
-      }
-      .img{
-        width:60px;
-        img{
-          width: 100%;
-        }
+      font-size: 1.2rem;
+    }
+    .img{
+      width:60px;
+      img{
+        width: 100%;
       }
     }
   }
   .dayaTarik{
-    padding: 0 88px;
+    margin: 0;
+    margin-top: 13em;
+    background-color: $aqua;
+    .dayaTarik-inner{
+      transform: translateY(-40%);
+      padding: 0 88px;
+      width: 100%;
+      .cardContainer{
+        display: flex;
+        justify-content: center;
+        gap: 100px;
+        .card{
+          position: relative;
+          width: 280px;
+          height: fit-content;
+          .img{
+            width: 100%;
+            img{
+              width: 100%;
+            }
+          }
+          h4{
+            font-family: 'Inter';
+            color: white;
+            letter-spacing: 1px;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            background-color: $oren;
+            width: 100%;
+            // height: 100px;
+            padding: 10px 20px;
+            text-align: justify;
+            &:after{
+              content:'';
+              position: absolute;
+              width: 100%;
+              height: 80px;
+              transform: translateY(-100%);
+              background: linear-gradient(to top,$oren,transparent);
+              top: 0;
+              left: 0;
+              
+            }
+          }
+        }
+      }
+      .rm-dayatarik{
+        color: white;
+        margin-top: 1em;
+        transition: .3s ease;
+        &:hover{
+          transform: scale(1.1);
+          transition: .3s ease;
+        }
+        // color
+        // background-color: red;
+        width: fit-content;
+        margin-left: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: $dark-blue;
+        text-decoration: none;
+        gap: 10px;
+        // background-color: red;
+        p{
+  
+          font-size: 1.2rem;
+        }
+        .img{
+          width:60px;
+          img{
+            width: 100%;
+          }
+        }
+  
+      }
+    }
+  }
+  .petaWilayah{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    h2{
+      // font-family: 'Mango';
+      font-size: 6rem;
+      // line-height: 90px;
+        background: linear-gradient(white, white);
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+      // background: red;
+      // color: red;
+      // background : none;
+      margin: 0;
+    }
+    .img{
+      // background-color: green;
+      width: 400px;
+      img{
+        width: 100%;
+      }
+    }
+
+    // margin: 0;
+    margin-top: -4rem;
+    background-color: $aqua;
     width: 100%;
-    height: 400px;
-    background-color: beige;
+    // height: 500px;
+    padding-bottom: 10rem;
   }
 }
