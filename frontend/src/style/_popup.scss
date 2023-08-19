@@ -5,10 +5,12 @@
   width: 100%;
   height: 100vh;
   overflow-y: auto;
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: rgba(0, 0, 0, 0.404);
   display: flex;
   justify-content: center;
   align-items: center;
+  // padding-bottom: 2em;
+  // margin-bottom: 2em;
 
   .popup-inner {
     position: relative;
@@ -17,7 +19,8 @@
     background-color: white;
     border-radius: 1em;
     top: 10%;
-    transform: translateY(10%);
+    transform: translateY(15%);
+    // padding-bottom: 2em;
   }
 
   .popup-inner .close-btn {
@@ -32,6 +35,7 @@
     font-size: 1.5rem;
     position: absolute;
     transform: translate(50%, -50%);
+    cursor: pointer;
   }
 
   .popup-content {
@@ -39,11 +43,17 @@
     gap: 1.5em;
     flex-direction: column;
     padding: 32px;
+    font-family: 'Inter', sans-serif;
 
     .judul-artikel {
       background-color: $aqua;
       border-radius: 1em;
       padding: 0.2em 1em;
+      text-align: center;
+      color: white;
+      h2 {
+        font-weight: 500;
+      }
     }
 
     .gambar-artikel {
@@ -53,18 +63,33 @@
         height: 300px;
       }
     }
+
+    .teks-artikel {
+      text-align: justify;
+    }
   }
 
   .popup-footer {
     background-color: $aqua;
-    padding: 1.2em;
+    padding: 1.2em 2em;
     display: flex;
     border-radius: 2em 2em 0 0;
-    gap: 0.5em;
-    .logo-dummy {
-      height: 40px;
-      width: 40px;
-      background-color: black;
+    gap: 0.8em;
+    font-family: 'Inter', sans-serif;
+    // justify-content: center;
+    align-items: center;
+
+    .logo-muna-container {
+      height: 2.5em;
+      width: 2.5em;
+      // background-color: black;
+      .logo-muna {
+        width: 100%;
+      }
+    }
+
+    .footer-content {
+      color: white;
     }
   }
 }

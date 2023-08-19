@@ -33,6 +33,9 @@
   }
 
   .daya-tarik-button {
+    .show-btn-container {
+      display: none;
+    }
     ul {
       display: flex;
       justify-content: space-between;
@@ -48,6 +51,7 @@
           font-size: 1.5vw;
           border: none;
           border-radius: 2em;
+          cursor: pointer;
         }
         button:hover {
           background-color: white;
