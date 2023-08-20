@@ -1,4 +1,4 @@
-import blank from '../asset/blank.png';
+// import blank from '../asset/blank.png';
 import GaleriImg from '../asset/galeri/GaleriImg';
 
 export const Galeri = () => {

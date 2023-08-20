@@ -204,48 +204,59 @@
         white-space: normal;
       }
     }
-    .daya-tarik-button {
+    .daya-tarik-menu {
       position: relative;
-      width: 75%;
+      width: 80%;
       top: 0;
       left: 50%;
       transform: translateX(-50%);
-      .show-btn-container {
+      .dropdown-mobile {
         display: block;
-        .show-btn {
-          background-color: $oren;
-          padding: 0.5em 1em;
-          margin: 0;
-          font-size: 1rem;
-          width: 100%;
-          text-align: left;
-          font-family: Mango;
-          border: none;
-          color: white;
-          border-radius: 1em;
-          font-weight: 600;
-        }
-      }
-
-      ul {
-        display: block;
-        // display: none;
-        padding: 0;
-        margin: 0;
-        background-color: $oren;
-        border-radius: 1em;
-        li {
-          padding: 0;
-          margin: 0;
-          button {
+        .show-btn-container {
+          // display: block;
+          .show-btn {
+            background-color: $oren;
             padding: 0.5em 1em;
             margin: 0;
             font-size: 1rem;
             width: 100%;
             text-align: left;
-            background-color: transparent;
+            font-family: Mango;
+            border: none;
+            color: white;
+            border-radius: 1em;
+            font-weight: 600;
           }
         }
+        ul {
+          display: block;
+          // display: none;
+          padding: 0;
+          margin-top: 3px;
+          background-color: $oren;
+          border-radius: 1em;
+          list-style: none;
+          li {
+            padding: 0;
+            margin: 0;
+            button {
+              border: none;
+              color: white;
+              font-family: Mango;
+              padding: 0.5em 1em;
+              margin: 0;
+              font-size: 1rem;
+              font-weight: 600;
+              width: 100%;
+              text-align: left;
+              background-color: transparent;
+            }
+          }
+        }
+      }
+
+      .menu-desktop {
+        display: none;
       }
     }
     .daya-tarik-content {
