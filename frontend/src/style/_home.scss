@@ -1,6 +1,6 @@
 .beranda {
   box-sizing: border-box;
-  height: 1000vh;
+  // height: 1000vh;
   width: 100%;
   h2{
     font-family: Mango;
@@ -271,5 +271,78 @@
     width: 100%;
     // height: 500px;
     padding-bottom: 10rem;
+  }
+  .imageSliderContainer{
+    // z-index: -1;
+    position: relative;
+    width: 100%;
+    height: 120vh;
+    .imageSlider{
+      width: 100%;
+      height: 100%;
+     h2{
+      // font-family: 'Mango';
+      font-size: 6rem;
+      // line-height: 90px;
+        background: linear-gradient(white, white);
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+      // background-color: red;
+      text-align: center;
+      transform: translateY(30%);
+      letter-spacing: 5px;
+      // color: red;
+      // background : none;
+      margin: 0;
+    }
+    }
+    .leftArrow, .rightArrow{
+      position: absolute;
+      top: 50%;
+      font-size: 12rem;
+      transform: translateY(-60%);
+      color: rgba(255, 255, 255, 0.781);
+      cursor: pointer;
+      transition: .3s ease;
+      &:hover{
+        transform: translateY(-60%) scale(1.1);
+      }
+    }
+    .leftArrow{
+      left: 50px;
+    }
+    .rightArrow{
+      right: 50px;
+    }
+
+  }
+  footer{
+    width: 100%;
+
+    z-index: 9;
+    border-radius: 50px 50px 0px 0;
+    background-color: white;
+    // transform: translateY(-50%);
+    position: absolute;
+    bottom: 0;
+    // z-index: ;
+    // margin-top: -50px ;
+    padding: 1em 4em;
+    .footerContainer{
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      .img{
+        width: 50px;
+        img{
+          width: 100%;
+        }
+      }
+      .content{
+        font-family: 'Inter';
+        font-size: 1.2rem;
+      }
+    }
+
   }
 }

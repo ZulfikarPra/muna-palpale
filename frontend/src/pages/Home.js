@@ -3,13 +3,24 @@ import { Link } from 'react-router-dom';
 // import { logout } from '../actions/userActions';
 import imageBeranda1 from '../asset/beranda-image-1.png';
 import imageBeranda2 from '../asset/beranda-image-2.png';
+import logoKKN from '../asset/logoKKN.png';
 import imageDayaTarik1 from '../asset/beranda-dayatarik-1.png';
 import imageDayaTarik2 from '../asset/beranda-dayatarik-2.png';
 import petaWilayahImage from '../asset/petaWilayahImage.png';
+import ImageSlider from '../components/imageSlider'
 import imageDayaTarik3 from '../asset/beranda-dayatarik-3.png';
 import arrow from '../asset/arrow.png';
+// import im from '../asset/imageSlide/imageSlide1'
 // import imageBeranda2 from '../asset/beranda-image2.png'
 export const Home = () => {
+  const slides = [
+    {url : '../static/media/imageSlide1.a2de519407371de0abd4.png', title : 'Foto Warga'},
+    {url : '../static/media/imageSlide2.29e6cc33bb52fd9f90fb.png', title : 'Foto Warga'},
+  ]
+  // const slides = [{
+  //   {url : '../asset/imageSlide/imageSlide1', title 'foto Warga'},
+
+  // }]
   // const dispatch = useDispatch();
   return (
     <div className="beranda">
@@ -91,14 +102,20 @@ export const Home = () => {
             <img src={petaWilayahImage} alt="" />
         </div>
       </div>
+      <div className="imageSliderContainer">
+        <ImageSlider slides={slides}></ImageSlider>
+      <footer>
+        <div className="footerContainer">
+          <div className="img">
+            <img src={logoKKN} alt="" />
+          </div>
+          <div className="content">
+            <h4>Muna Merona <br /> KKN-PPM UGM Periode 2 Tahun 2023</h4>
+          </div>
+        </div>
+      </footer>
+      </div>
+      {/* <imageSlider slides = {slides}> */}
     </div>
   );
 };
-
-// {/* <Link to={'/login'}>
-//   <button>Login</button>
-// </Link>
-// <Link to={'/register'}>
-//   <button>Register</button>
-// </Link>
-// <button onClick={() => dispatch(logout())}>Logout</button> */}
