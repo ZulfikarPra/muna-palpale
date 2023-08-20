@@ -11,7 +11,7 @@ function imageSlider({slides}) {
         width : '100%',
         height: '100%',
         backgroundImage: `url(${slides[currentIndex].url})`,
-        backgroundPosition: '0 -100px',
+        backgroundPosition: 'center',
         backgroundSize: 'cover',
         backgroundRepeat: 'no-repeat'
     }

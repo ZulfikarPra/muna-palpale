@@ -7,6 +7,7 @@ import logoKKN from '../asset/logoKKN.png';
 import imageDayaTarik1 from '../asset/beranda-dayatarik-1.png';
 import imageDayaTarik2 from '../asset/beranda-dayatarik-2.png';
 import petaWilayahImage from '../asset/petaWilayahImage.png';
+import imagesection1 from '../asset/imageSlide/imageSlide1.png'
 import ImageSlider from '../components/imageSlider'
 import imageDayaTarik3 from '../asset/beranda-dayatarik-3.png';
 import arrow from '../asset/arrow.png';
@@ -14,8 +15,8 @@ import arrow from '../asset/arrow.png';
 // import imageBeranda2 from '../asset/beranda-image2.png'
 export const Home = () => {
   const slides = [
-    {url : '../static/media/imageSlide1.a2de519407371de0abd4.png', title : 'Foto Warga'},
-    {url : '../static/media/imageSlide2.29e6cc33bb52fd9f90fb.png', title : 'Foto Warga'},
+    {url : 'http://localhost:3000/static/media/imageSlide1.a2de519407371de0abd4.png', title : 'Foto Warga'},
+    {url : 'http://localhost:3000/static/media/imageSlide2.29e6cc33bb52fd9f90fb.png', title : 'Foto Warga'},
   ]
   // const slides = [{
   //   {url : '../asset/imageSlide/imageSlide1', title 'foto Warga'},
@@ -97,7 +98,7 @@ export const Home = () => {
         </div>
       </div>
       <div className="petaWilayah">
-        <h2>Peta <br /> Wilayah</h2>
+        <h2><span>Peta</span> <br /> Wilayah</h2>
         <div className="img">
             <img src={petaWilayahImage} alt="" />
         </div>
