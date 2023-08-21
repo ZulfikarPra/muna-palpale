@@ -41,6 +41,7 @@ export const DayaTarik = () => {
                     setMenuText(e.target.innerText);
                     setShow(!show);
                     setIsDropdownActive(!isDropdownActive);
+                    setPageActive('AlamDesa');
                   }}
                 >
                   Alam Desa
@@ -52,6 +53,7 @@ export const DayaTarik = () => {
                     setMenuText(e.target.innerText);
                     setShow(!show);
                     setIsDropdownActive(!isDropdownActive);
+                    setPageActive('SosialBudaya');
                   }}
                 >
                   Sosial Budaya
@@ -63,6 +65,7 @@ export const DayaTarik = () => {
                     setMenuText(e.target.innerText);
                     setShow(!show);
                     setIsDropdownActive(!isDropdownActive);
+                    setPageActive('MakananKhas');
                   }}
                 >
                   Makanan Khas
@@ -74,6 +77,7 @@ export const DayaTarik = () => {
                     setMenuText(e.target.innerText);
                     setShow(!show);
                     setIsDropdownActive(!isDropdownActive);
+                    setPageActive('BahasaMuna');
                   }}
                 >
                   Bahasa Muna
@@ -87,25 +91,31 @@ export const DayaTarik = () => {
         <div className="menu-desktop">
           <ul>
             <li>
-              <button>Alam Desa</button>
+              <button onClick={() => setPageActive('AlamDesa')}>Alam Desa</button>
             </li>
             <li>
-              <button>Sosial Budaya</button>
+              <button onClick={() => setPageActive('SosialBudaya')}>Sosial Budaya</button>
             </li>
             <li>
-              <button>Makanan Khas</button>
+              <button onClick={() => setPageActive('MakananKhas')}>Makanan Khas</button>
             </li>
             <li>
-              <button>Bahasa Muna</button>
+              <button onClick={() => setPageActive('BahasaMuna')}>Bahasa Muna</button>
             </li>
           </ul>
         </div>
       </div>
       <div className="daya-tarik-content">
-        <CardLeft></CardLeft>
-        {/* <CardRight></CardRight> */}
+        {pageActive === 'AlamDesa' && <CardLeft></CardLeft>}
+        {pageActive === 'SosialBudaya' && (
+          <div className="daya-tarik-content">
+            <CardLeft></CardLeft>
+            <CardRight></CardRight>
+          </div>
+        )}
+        {pageActive === 'MakananKhas' && <CardLeft></CardLeft>}
+        {pageActive === 'BahasaMuna' && <BahasaMuna></BahasaMuna>}
       </div>
-      {/* <BahasaMuna></BahasaMuna> */}
     </div>
   );
 };
