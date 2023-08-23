@@ -272,57 +272,175 @@
     }
   }
 
-  // BERANDA 
-    .beranda{
+@media screen and (max-width:1000px) {
+  .beranda{
     .beranda-jumbotron{
       background: url('../asset/beranda-header-mobile.png');
-          background-position: bottom;
-          background-size: cover;
-    text-align: center;
-    position: relative;
-    .beranda-jumbotron-title{
-      // background-color: red;
-      transform: translate(50%,30%) scale(.68);
-      // transform-origin: center center;
-      padding: 5em 0;
+      background-position: bottom;
+      background-size: cover;
+      text-align: center;
+      position: relative;
+      .beranda-jumbotron-title {
+        // background-color: red;
+        transform: translate(50%, 30%) scale(0.68);
+        // transform-origin: center center;
+        padding: 5em 0;
+      }
     }
-    }
-    .beranda-intro{
+    .beranda-intro {
       padding: 0 2em;
       margin-top: 20px;
       // background-color: red;
-      p{
+      p {
         font-size: 1rem;
         // background-color: blue;
         width: 70%;
       }
     }
-    .dayaTarik{
-      .dayaTarik-inner{
+    .dayaTarik {
+      .dayaTarik-inner {
         margin-bottom: -500px;
         transform: translateY(-50%);
-        .cardContainer{
+        .cardContainer {
           margin-top: 750px;
           align-items: center;
           flex-direction: column;
         }
       }
     }
-    .imageSliderContainer{
+    .imageSliderContainer {
       height: 80vh;
-      h2{
+      h2 {
         font-size: 4rem !important;
       }
     }
-    footer{
+    footer {
       padding: 0.5 4em;
       padding-bottom: 1em;
-      .footerContainer{
-        .content{
-          font-size: .8rem;
+      .footerContainer {
+        .content {
+          font-size: 0.8rem;
         }
       }
     }
   }
 }
 
+// HOME
+@media screen and (max-width: 800px) {
+  .beranda{
+
+    h2{
+      // padding: 0 2em !important;
+      padding: 0;
+      text-align: center;
+      font-size: 2.5rem !important;
+    }
+    .beranda-video-profile{
+      margin-top: 3rem;
+      padding: 0 2em !important;
+      .lanobake,.moolo{
+        h4{
+          font-size: 1.5rem !important;
+        }
+      }
+    }
+    .petaWilayah{
+      flex-direction: column;
+      gap: 30px;
+      h2{
+        span{
+          font-size: 5rem;
+          margin-bottom: -30px;
+        }
+        font-size: 6rem !important;
+        // line-height: 100px;
+      }
+      .img{
+        width: 250px;
+      }
+    }
+  }
+}
+
+// GALERI
+@media screen and (max-width: 800px) {
+  .galeri {
+    // height: 50vh;
+    .galeri-hero-image {
+      background-image: url('../asset/galeri-header-mobile.png');
+      background-size: 100%;
+      background-repeat: no-repeat;
+      height: 80vh;
+      h1 {
+        font-size: 8rem;
+        top: 28%;
+        right: 50%;
+        transform: translate(50%, -50%);
+      }
+    }
+    .galeri-content {
+      padding: 1em 0;
+    }
+  }
+}
+
+//TENTANG DESA LANOBAKE
+@media screen and (max-width: 800px) {
+  .tentang-desa {
+    .jumbotron {
+      h1 {
+        font-size: 6rem;
+        line-height: 100px;
+      }
+    }
+    section {
+      padding: 0 3em;
+    }
+  }
+}
+
+// CARD
+@media screen and (max-width: 800px) {
+}
+
+// DAYA TARIK
+@media screen and (max-width: 800px) {
+  .daya-tarik-content {
+    flex-direction: column;
+    padding: 0;
+    gap: 0;
+    justify-content: space-between;
+    width: 100%;
+    .card-left-container,
+    .card-right-container {
+      width: 100%;
+      .card-content {
+        .card-btn-container {
+          .card-btn {
+            width: 50%;
+          }
+        }
+      }
+    }
+  }
+}
+
+      .popup-footer {
+        padding-left: 1.2em;
+        gap: 0.5em;
+        .logo-muna-container {
+          height: 1.8em;
+          width: 1.8em;
+          // background-color: black;
+          .logo-muna {
+            width: 100%;
+          }
+        }
+        .footer-content {
+          font-size: 12px;
+        }
+      }
+    }
+  }
+}

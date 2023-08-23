@@ -66,9 +66,10 @@
   .daya-tarik-content {
     display: flex;
     gap: 2em;
+    // flex-direction: row;
     // align-items: center;
     justify-content: center;
     // justify-content: space-between;
-    padding: 0 3em;
+    // padding: 0 3em;
   }
 }
