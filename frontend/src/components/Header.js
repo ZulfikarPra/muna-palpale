@@ -60,10 +60,10 @@ export const Header = () => {
             Login
           </Link>
         </nav>
-        <button className="hamburgerMenu" onClick={toggleHamburger}>
-          <span class="line line1"></span>
-          <span class="line line2"></span>
-          <span class="line line3"></span>
+        <button className={hamburgerOpen ? 'hamburgerMenu hamburgerOpen' : 'hamburgerMenu'} onClick={toggleHamburger}>
+          <span ></span>
+          <span ></span>
+          <span ></span>
         </button>
       </div>
     </header>

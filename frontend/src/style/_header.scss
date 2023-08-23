@@ -1,7 +1,9 @@
 .hideNav {
+  transition: 1s ease;
   right: -100% !important;
 }
 header {
+  // transition: 1s ease;
   background-color: rgba(255, 255, 255, 0.738);
   // opacity: 80%;
   width: 100%;
@@ -36,6 +38,7 @@ header {
       }
     }
     nav {
+      transition: .4s ease;
       display: flex;
       gap: 30px;
       width: fit-content;

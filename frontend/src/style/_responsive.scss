@@ -1,6 +1,8 @@
 //LOGIN
 
 @media screen and (max-width: 800px) {
+  
+  // LOGRES
   .login,
   .register {
     .login-content,
@@ -38,20 +40,121 @@
       height: 100%;
     }
   }
+
+  // BERANDA
+  .beranda{
+
+    h2{
+      // padding: 0 2em !important;
+      padding: 0;
+      text-align: center;
+      font-size: 2.5rem !important;
+    }
+    .beranda-video-profile{
+      margin-top: 3rem;
+      padding: 0 2em !important;
+      .lanobake,.moolo{
+        h4{
+          font-size: 1.5rem !important;
+        }
+
+      }
+    }
+    .petaWilayah{
+      flex-direction: column;
+      gap: 30px;
+      h2{
+        span{
+          font-size: 5rem;
+          margin-bottom: -30px;
+        }
+        font-size: 6rem !important;
+        // line-height: 100px;
+      }
+      .img{
+        width: 250px;
+      }
+    }
+  }
+
+  // GALERI 
+  .galeri {
+    // height: 50vh;
+    .galeri-hero-image {
+      background-image: url('../asset/galeri-header-mobile.png');
+      background-size: 100%;
+      background-repeat: no-repeat;
+      height: 80vh;
+      h1 {
+        font-size: 8rem;
+        top: 28%;
+        right: 50%;
+        transform: translate(50%, -50%);
+      }
+    }
+    .galeri-content {
+      padding: 1em 0;
+    }
+  }
+  // TENTANG DESA 
+    .tentang-desa {
+    .jumbotron {
+      h1 {
+        font-size: 6rem;
+        line-height: 100px;
+      }
+    }
+    section {
+      padding: 0 3em;
+    }
+  }
+  // DAYATARIK 
+    .daya-tarik-content {
+    flex-direction: column;
+    padding: 0;
+    gap: 0;
+    justify-content: space-between;
+    width: 100%;
+    .card-left-container,
+    .card-right-container {
+      width: 100%;
+      .card-content {
+        .card-btn-container {
+          .card-btn {
+            width: 50%;
+          }
+        }
+      }
+    }
+  }
 }
 
 // HAMBURGER
 
 @media screen and (max-width: 1000px) {
+  // NAVBAR 
   header {
-    background-color: rgba(255, 255, 255, 0);
+
+    // background-color: rgba(140, 56, 56, 0.716);
     box-shadow: none;
 
     .webProfile {
       // background-color: green;
+      // width: 80%;
+      margin: 0 !important;
+      // padding: 0 !important;
+      // justify-content: center;
+      // padding: 0  ;
+      // background-color: red;
       .webLogo {
-        color: white;
-        transform: scale(0.8);
+        // color: black;
+        // transform: scale(0.8);
+        // background-color: yellow;
+        // padding: 0;
+        // margin: 0;
+        .nav-link-logo{
+          display: none;
+        }
         img {
           background-color: white;
           border-radius: 50%;
@@ -59,6 +162,7 @@
         }
       }
       nav {
+        // background-color: red !important;
         display: flex;
         flex-direction: column;
         align-items: flex-start;
@@ -135,21 +239,41 @@
         flex-direction: column;
         background-color: transparent;
         // background-color: red;
+        // color: black;
         gap: 8px;
         span {
+          transition: .5s ease;
           border-radius: 30px;
           height: 5px;
           width: 35px;
-          background-color: white;
+          background-color: $tosca;
         }
+
         // right: 0;
+      }
+      .hamburgerOpen {
+        // background-color: red;
+        span:nth-child(1){
+          // background-color: red;
+          transform: rotate(45deg) translate(9px,9px);
+          transition: .5s ease;
+        }
+        span:nth-child(2){
+          // display: none;
+          opacity: 0;
+          // background-color: red;
+        }
+        span:nth-child(3){
+          transform: rotate(-45deg) translate(9px,-9px);
+          transition: .5s ease;
+          // background-color: red;
+        }
       }
     }
   }
-}
 
-@media screen and (max-width:1000px) {
-  .beranda{
+  // BERANDA 
+    .beranda{
     .beranda-jumbotron{
       background: url('../asset/beranda-header-mobile.png');
           background-position: bottom;
@@ -196,106 +320,6 @@
       .footerContainer{
         .content{
           font-size: .8rem;
-        }
-      }
-    }
-  }
-}
-
-// HOME
-@media screen and (max-width: 800px) {
-  .beranda{
-
-    h2{
-      // padding: 0 2em !important;
-      padding: 0;
-      text-align: center;
-      font-size: 2.5rem !important;
-    }
-    .beranda-video-profile{
-      margin-top: 3rem;
-      padding: 0 2em !important;
-      .lanobake,.moolo{
-        h4{
-          font-size: 1.5rem !important;
-        }
-      }
-    }
-    .petaWilayah{
-      flex-direction: column;
-      gap: 30px;
-      h2{
-        span{
-          font-size: 5rem;
-          margin-bottom: -30px;
-        }
-        font-size: 6rem !important;
-        // line-height: 100px;
-      }
-      .img{
-        width: 250px;
-      }
-    }
-  }
-}
-
-// GALERI
-@media screen and (max-width: 800px) {
-  .galeri {
-    // height: 50vh;
-    .galeri-hero-image {
-      background-image: url('../asset/galeri-header-mobile.png');
-      background-size: 100%;
-      background-repeat: no-repeat;
-      height: 80vh;
-      h1 {
-        font-size: 8rem;
-        top: 28%;
-        right: 50%;
-        transform: translate(50%, -50%);
-      }
-    }
-    .galeri-content {
-      padding: 1em 0;
-    }
-  }
-}
-
-//TENTANG DESA LANOBAKE
-@media screen and (max-width: 800px) {
-  .tentang-desa {
-    .jumbotron {
-      h1 {
-        font-size: 6rem;
-        line-height: 100px;
-      }
-    }
-    section {
-      padding: 0 3em;
-    }
-  }
-}
-
-// CARD
-@media screen and (max-width: 800px) {
-}
-
-// DAYA TARIK
-@media screen and (max-width: 800px) {
-  .daya-tarik-content {
-    flex-direction: column;
-    padding: 0;
-    gap: 0;
-    justify-content: space-between;
-    width: 100%;
-    .card-left-container,
-    .card-right-container {
-      width: 100%;
-      .card-content {
-        .card-btn-container {
-          .card-btn {
-            width: 50%;
-          }
         }
       }
     }
