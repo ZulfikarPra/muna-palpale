@@ -11,8 +11,6 @@ import imagesection1 from '../asset/imageSlide/imageSlide1.png'
 import ImageSlider from '../components/imageSlider'
 import imageDayaTarik3 from '../asset/beranda-dayatarik-3.png';
 import arrow from '../asset/arrow.png';
-// import im from '../asset/imageSlide/imageSlide1'
-// import imageBeranda2 from '../asset/beranda-image2.png'
 export const Home = () => {
   const slides = [
     {url : 'http://localhost:3000/static/media/imageSlide1.a2de519407371de0abd4.png', title : 'Foto Warga'},

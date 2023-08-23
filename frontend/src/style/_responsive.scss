@@ -109,19 +109,88 @@
     }
   }
   // DAYATARIK 
+  .daya-tarik {
+    position: relative;
+    .daya-tarik-jumbotron {
+      background-size: 125%;
+      background-position: center 250px;
+      height: 100vh;
+      h1 {
+        font-size: 18vw;
+        top: 0;
+        transform: translate(50%, 65%);
+        white-space: normal;
+      }
+    }
+    .daya-tarik-menu {
+      position: relative;
+      width: 80%;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      .dropdown-mobile {
+        display: block;
+        .show-btn-container {
+          // display: block;
+          .show-btn {
+            background-color: $oren;
+            padding: 0.5em 1em;
+            margin: 0;
+            font-size: 1rem;
+            width: 100%;
+            text-align: left;
+            font-family: Mango;
+            border: none;
+            color: white;
+            border-radius: 1em;
+            font-weight: 600;
+          }
+        }
+        ul {
+          display: block;
+          // display: none;
+          padding: 0;
+          margin-top: 3px;
+          background-color: $oren;
+          border-radius: 1em;
+          list-style: none;
+          li {
+            padding: 0;
+            margin: 0;
+            button {
+              border: none;
+              color: white;
+              font-family: Mango;
+              padding: 0.5em 1em;
+              margin: 0;
+              font-size: 1rem;
+              font-weight: 600;
+              width: 100%;
+              text-align: left;
+              background-color: transparent;
+            }
+          }
+        }
+      }
+
+      .menu-desktop {
+        display: none;
+      }
+    }
     .daya-tarik-content {
-    flex-direction: column;
-    padding: 0;
-    gap: 0;
-    justify-content: space-between;
-    width: 100%;
-    .card-left-container,
-    .card-right-container {
+      flex-direction: column;
+      padding: 2em;
+      gap: 2em;
+      justify-content: space-between;
       width: 100%;
-      .card-content {
-        .card-btn-container {
-          .card-btn {
-            width: 50%;
+      .card-left-container,
+      .card-right-container {
+        width: 100%;
+        .card-content {
+          .card-btn-container {
+            .card-btn {
+              width: 50%;
+            }
           }
         }
       }
@@ -147,11 +216,6 @@
       // padding: 0  ;
       // background-color: red;
       .webLogo {
-        // color: black;
-        // transform: scale(0.8);
-        // background-color: yellow;
-        // padding: 0;
-        // margin: 0;
         .nav-link-logo{
           display: none;
         }
@@ -162,7 +226,6 @@
         }
       }
       nav {
-        // background-color: red !important;
         display: flex;
         flex-direction: column;
         align-items: flex-start;
@@ -174,7 +237,6 @@
         height: 100vh;
         width: 40%;
         padding: 5em 0;
-        // position: relative;
         .nav-link-login {
           margin: 0 1.5em;
         }
@@ -225,6 +287,27 @@
             }
           }
         }
+              .logout{
+                padding-left: 25px;
+        width: 100%;
+        display: flex;
+        flex-direction: column ;
+        align-items: start;
+        gap: 10px;
+        // justify-content: center;
+        h4{
+          // background-color: yellow;
+          display: inline-block;
+        }
+        .img{
+          display: none;
+        }
+        .logoutButton{
+          margin: 0;
+          // background-color: aqua;
+          display: inline-block !important;
+        }
+      }
       }
       .hamburgerMenu {
         z-index: 999;
@@ -269,10 +352,9 @@
           // background-color: red;
         }
       }
+
     }
   }
-
-@media screen and (max-width:1000px) {
   .beranda{
     .beranda-jumbotron{
       background: url('../asset/beranda-header-mobile.png');
@@ -324,123 +406,20 @@
       }
     }
   }
-}
-
-// HOME
-@media screen and (max-width: 800px) {
-  .beranda{
-
-    h2{
-      // padding: 0 2em !important;
-      padding: 0;
-      text-align: center;
-      font-size: 2.5rem !important;
-    }
-    .beranda-video-profile{
-      margin-top: 3rem;
-      padding: 0 2em !important;
-      .lanobake,.moolo{
-        h4{
-          font-size: 1.5rem !important;
-        }
+  .popup-footer {
+    padding-left: 1.2em;
+    gap: 0.5em;
+    .logo-muna-container {
+      height: 1.8em;
+      width: 1.8em;
+      // background-color: black;
+      .logo-muna {
+        width: 100%;
       }
     }
-    .petaWilayah{
-      flex-direction: column;
-      gap: 30px;
-      h2{
-        span{
-          font-size: 5rem;
-          margin-bottom: -30px;
-        }
-        font-size: 6rem !important;
-        // line-height: 100px;
-      }
-      .img{
-        width: 250px;
-      }
+    .footer-content {
+      font-size: 12px;
     }
   }
 }
-
-// GALERI
-@media screen and (max-width: 800px) {
-  .galeri {
-    // height: 50vh;
-    .galeri-hero-image {
-      background-image: url('../asset/galeri-header-mobile.png');
-      background-size: 100%;
-      background-repeat: no-repeat;
-      height: 80vh;
-      h1 {
-        font-size: 8rem;
-        top: 28%;
-        right: 50%;
-        transform: translate(50%, -50%);
-      }
-    }
-    .galeri-content {
-      padding: 1em 0;
-    }
-  }
-}
-
-//TENTANG DESA LANOBAKE
-@media screen and (max-width: 800px) {
-  .tentang-desa {
-    .jumbotron {
-      h1 {
-        font-size: 6rem;
-        line-height: 100px;
-      }
-    }
-    section {
-      padding: 0 3em;
-    }
-  }
-}
-
-// CARD
-@media screen and (max-width: 800px) {
-}
-
-// DAYA TARIK
-@media screen and (max-width: 800px) {
-  .daya-tarik-content {
-    flex-direction: column;
-    padding: 0;
-    gap: 0;
-    justify-content: space-between;
-    width: 100%;
-    .card-left-container,
-    .card-right-container {
-      width: 100%;
-      .card-content {
-        .card-btn-container {
-          .card-btn {
-            width: 50%;
-          }
-        }
-      }
-    }
-  }
-}
-
-      .popup-footer {
-        padding-left: 1.2em;
-        gap: 0.5em;
-        .logo-muna-container {
-          height: 1.8em;
-          width: 1.8em;
-          // background-color: black;
-          .logo-muna {
-            width: 100%;
-          }
-        }
-        .footer-content {
-          font-size: 12px;
-        }
-      }
-    }
-  }
-}
+  

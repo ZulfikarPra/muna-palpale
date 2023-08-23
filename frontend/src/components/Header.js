@@ -1,9 +1,10 @@
 import { Link } from 'react-router-dom';
 import logo512 from '../asset/logo512.png';
 import { useState } from 'react';
-
+import profileIcon from '../asset/account-icon.png'
 export const Header = () => {
   const [hamburgerOpen, setHamburgerOpen] = useState(false);
+  const [isLogin, setIsLogin] = useState(true);
 
   const toggleHamburger = () => {
     setHamburgerOpen(!hamburgerOpen);
@@ -56,9 +57,21 @@ export const Header = () => {
               </Link>
             </li>
           </ul>
-          <Link to={'/login'} className="nav-link-login">
-            Login
-          </Link>
+          {
+            isLogin? (
+              <div className="logout">
+                <h4>Hi, Nia Milla</h4>
+                <div className="img">
+                  <img src={profileIcon} alt="" />
+                </div>
+                <button className="logoutButton">Logout</button>
+              </div>
+            ):(
+              <Link to={'/login'} className="nav-link-login">
+                Login
+              </Link>
+            )
+          }
         </nav>
         <button className={hamburgerOpen ? 'hamburgerMenu hamburgerOpen' : 'hamburgerMenu'} onClick={toggleHamburger}>
           <span ></span>

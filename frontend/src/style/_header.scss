@@ -13,6 +13,7 @@ header {
   z-index: 1;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   .webProfile {
+    // background-color: yellow;
     box-sizing: border-box;
     height: 100%;
     width: 100%;
@@ -41,8 +42,10 @@ header {
       transition: .4s ease;
       display: flex;
       gap: 30px;
-      width: fit-content;
-      align-items: center;
+      // width: fit-content;
+      // align-items: center;
+      // background-color: green;
+      height: 100% ;
       .nav-link-login {
         background: linear-gradient($aqua, $blue);
         padding: 0.5rem 1.2rem;
@@ -52,6 +55,67 @@ header {
         text-decoration: none;
         font-family: Black Mango;
         font-weight: bolder;
+      }
+      .logout{
+        &:hover .logoutButton{
+          // background-color: green;
+          display: inline-block;
+        }
+        flex-direction: column;
+        height: fit-content;
+        // background-color: blue;
+        display: flex;
+        width: 70px;
+        // padding-bottom: 30px;
+        align-items: center;
+        h4{
+          display: none;
+        }
+        .img{
+          align-self: start;
+          // background-color: blue;
+          // height: 100%;
+          height: 70px;
+          width: 70px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          cursor: pointer;
+          img{
+            // padding-top: 5px;
+            height: 75%;
+          }
+        }
+        button{
+          
+          &:hover{
+            cursor: pointer;
+            background-color: darken($oren, .5);
+            transition: .3s ease;
+          }
+          margin-top: 20px;
+          transition: .3s ease;
+          padding: 0.5rem 1.4rem;
+          color: white;
+          border-radius: 1.5rem;
+          // color: white;
+          background-color: $oren;
+          border: 0;
+          text-decoration: none;
+          font-family: Black Mango;
+          font-weight: bolder;
+          width: 100px;
+          height: 40px;
+          // height: 90px;
+          // margin-top: 25px;
+          // position: absolute;
+          // bottom: 0;
+          // left: 50%;
+          // transform: translateY(140%) translateX(-50%);
+        }
+        .img+button {
+          display: none;
+        }
       }
       ul {
         height: 100%;
