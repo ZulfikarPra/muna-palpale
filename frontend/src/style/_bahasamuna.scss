@@ -1,4 +1,7 @@
 .bahasa-muna {
+  display: flex;
+  flex-direction: column;
+  gap: 4em;
   .sejarah-singkat,
   .aturan-bahasa,
   .mini-kamus {
@@ -8,6 +11,16 @@
       font-weight: 600;
       font-family: Mango;
     }
+    p {
+      font-family: 'Inter', sans-serif;
+    }
+  }
+
+  .aturan-bahasa,
+  .mini-kamus {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
   }
 
   .sejarah-singkat {
@@ -28,7 +41,6 @@
   .aturan-bahasa {
     display: flex;
     flex-direction: column;
-    // justify-content: right;
     align-items: end;
     padding: 0 5em;
     .aturan-content {
@@ -44,7 +56,6 @@
 
 .mini-kamus {
   text-align: center;
-  // align-items: center;
   .mini-kamus-content {
     table,
     th,
@@ -54,19 +65,27 @@
       border-collapse: collapse;
       margin-left: auto;
       margin-right: auto;
+      // padding: 0.1em;
     }
     th,
     td {
-      padding: 1em;
+      padding: 2em;
     }
     table {
       // border-radius: 10px;
-      width: 80%;
+      width: 90%;
       thead {
+        font-size: 20px;
         background-color: $oren;
+        color: white;
       }
       tbody {
         background-color: white;
+        font-family: 'Inter', sans-serif;
+        // font-size: 8px;
+        td {
+          font-weight: 500;
+        }
       }
     }
   }

@@ -37,7 +37,7 @@ export const DayaTarik = () => {
                 setIsDropdownActive(!isDropdownActive);
               }}
             >
-              {menuText}
+              <span>{menuText}</span>
               <i class="fa-solid fa-angle-down"></i>
             </button>
           </div>

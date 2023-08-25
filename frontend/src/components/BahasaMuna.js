@@ -54,11 +54,11 @@ export const BahasaMuna = () => {
               {KONTEN.map((data) => {
                 return (
                   <tr>
-                    <th>{data['No.']}</th>
-                    <th>{data['Kata Indo']}</th>
-                    <th>{data['Kata Muna']}</th>
-                    <th>{data['Kalimat Indo']}</th>
-                    <th>{data['Kalimat Muna']}</th>
+                    <td>{data['No.']}</td>
+                    <td>{data['Kata Indo']}</td>
+                    <td>{data['Kata Muna']}</td>
+                    <td>{data['Kalimat Indo']}</td>
+                    <td>{data['Kalimat Muna']}</td>
                   </tr>
                 );
               })}
