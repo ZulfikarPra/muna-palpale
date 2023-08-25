@@ -1,0 +1,695 @@
+[
+  {
+    "No.": 1,
+    "Kata Indo": "Makan",
+    "Kata Muna": "Fuma/ Tangkahi",
+    "Kalimat Indo": "Ayo makan bersama",
+    "Kalimat Muna": "Mai do dofumagho/tangkahigho deki!"
+  },
+  {
+    "No.": 2,
+    "Kata Indo": "Minum",
+    "Kata Muna": "Foroghu",
+    "Kalimat Indo": "Apakah kamu sudah minum?",
+    "Kalimat Muna": "Pada oforoghu?"
+  },
+  {
+    "No.": 3,
+    "Kata Indo": "Kabar",
+    "Kata Muna": "Bhirita",
+    "Kalimat Indo": "Bagaimana kabarmu?",
+    "Kalimat Muna": "Pedahae bhiritam?"
+  },
+  {
+    "No.": 4,
+    "Kata Indo": "Terima kasih",
+    "Kata Muna": "Tarima kasih",
+    "Kalimat Indo": "Terima kasih untuk makanannya",
+    "Kalimat Muna": "Tarima kasih kafumano"
+  },
+  {
+    "No.": 5,
+    "Kata Indo": "Nama",
+    "Kata Muna": "Nea",
+    "Kalimat Indo": "Siapa namamu? Namaku betty",
+    "Kalimat Muna": "Lahae neam? Neaku Betty"
+  },
+  {
+    "No.": 6,
+    "Kata Indo": "Tolong",
+    "Kata Muna": "Tulumi",
+    "Kalimat Indo": "Apakah aku bisa minta tolong? ",
+    "Kalimat Muna": "Nembali tulumi kanau"
+  },
+  {
+    "No.": 7,
+    "Kata Indo": "Rumah",
+    "Kata Muna": "Lambu",
+    "Kalimat Indo": "Dimana rumah pak kepala desa? ",
+    "Kalimat Muna": "Nehamai lambuno kapala desa"
+  },
+  {
+    "No.": 8,
+    "Kata Indo": "Ikan",
+    "Kata Muna": "Kenta",
+    "Kalimat Indo": "Banyak sekali ikan di sungai itu",
+    "Kalimat Muna": "Kabharino kenta we karagha watu"
+  },
+  {
+    "No.": 9,
+    "Kata Indo": "Permisi",
+    "Kata Muna": "Tabea",
+    "Kalimat Indo": "Permisi mau lewat",
+    "Kalimat Muna": "Tabea amangka"
+  },
+  {
+    "No.": 10,
+    "Kata Indo": "Kamu",
+    "Kata Muna": "Ihintu",
+    "Kalimat Indo": "Apakah kamu kenal dia?",
+    "Kalimat Muna": "Opandehane anoa"
+  },
+  {
+    "No.": 11,
+    "Kata Indo": "Saya",
+    "Kata Muna": "Inodi",
+    "Kalimat Indo": "Saya suka kelapa",
+    "Kalimat Muna": "Inodi asigho ghai"
+  },
+  {
+    "No.": 12,
+    "Kata Indo": "Cinta",
+    "Kata Muna": "Asigho",
+    "Kalimat Indo": "Saya cinta Muna",
+    "Kalimat Muna": "Inodi asigho Wuna"
+  },
+  {
+    "No.": 13,
+    "Kata Indo": "Selamat tinggal",
+    "Kata Muna": "Tamere deki",
+    "Kalimat Indo": "Selamat tinggal, sampai jumpa lagi",
+    "Kalimat Muna": "Tamere deki, dah doghawa tora"
+  },
+  {
+    "No.": 14,
+    "Kata Indo": "Iya",
+    "Kata Muna": "Umbe",
+    "Kalimat Indo": "Iya saya mau mandi",
+    "Kalimat Muna": "Umbe inodi ae kadiu deki"
+  },
+  {
+    "No.": 15,
+    "Kata Indo": "Tidak",
+    "Kata Muna": "Mina",
+    "Kalimat Indo": "Saya tidak ingin pisang goreng",
+    "Kalimat Muna": "Inodi mina mindalo sanggara"
+  },
+  {
+    "No.": 16,
+    "Kata Indo": "Kapal",
+    "Kata Muna": "Kapala",
+    "Kalimat Indo": "Kapan kapal penyeberangan datang?",
+    "Kalimat Muna": "Naefie Kapala kapolimbaha namai"
+  },
+  {
+    "No.": 17,
+    "Kata Indo": "Kalian",
+    "Kata Muna": "Ihintum",
+    "Kalimat Indo": "Kalian sedang apa",
+    "Kalimat Muna": "Ihintum meafam itu?"
+  },
+  {
+    "No.": 18,
+    "Kata Indo": "Bintang",
+    "Kata Muna": "Kolipopo",
+    "Kalimat Indo": "Bintang-bintang itu sangat bagus",
+    "Kalimat Muna": "Kolipopohi maitu nokesa sepaliha"
+  },
+  {
+    "No.": 19,
+    "Kata Indo": "Kenyang",
+    "Kata Muna": "Wehi",
+    "Kalimat Indo": "Saya sudah kenyang",
+    "Kalimat Muna": "Inodi nando awehi"
+  },
+  {
+    "No.": 20,
+    "Kata Indo": "Telur",
+    "Kata Muna": "Ghunteli",
+    "Kalimat Indo": "Telur ini enak sekali",
+    "Kalimat Muna": "Ghunteli aini kambaka sepaliha"
+  },
+  {
+    "No.": 21,
+    "Kata Indo": "Pintar",
+    "Kata Muna": "Pande",
+    "Kalimat Indo": "Kamu pintar sekali",
+    "Kalimat Muna": "Ihintu opande sepaliha"
+  },
+  {
+    "No.": 22,
+    "Kata Indo": "Jangan",
+    "Kata Muna": "Koem/koise",
+    "Kalimat Indo": "Jangan seperti itu",
+    "Kalimat Muna": "Koem/koise peda aitu"
+  },
+  {
+    "No.": 23,
+    "Kata Indo": "Main",
+    "Kata Muna": "Kalalambu",
+    "Kalimat Indo": "Ayo kita main voli",
+    "Kalimat Muna": "Mai intaidim dapokalalambu voli"
+  },
+  {
+    "No.": 24,
+    "Kata Indo": "Menari",
+    "Kata Muna": "Manari",
+    "Kalimat Indo": "Ayo menari lulo",
+    "Kalimat Muna": "Mai manari lulo"
+  },
+  {
+    "No.": 25,
+    "Kata Indo": "Sarapan",
+    "Kata Muna": "Tampo",
+    "Kalimat Indo": "Sana sarapan",
+    "Kalimat Muna": "Kala metampo"
+  },
+  {
+    "No.": 26,
+    "Kata Indo": "Baca",
+    "Kata Muna": "Basa",
+    "Kalimat Indo": "Baca buku itu",
+    "Kalimat Muna": "Basa boku itu"
+  },
+  {
+    "No.": 27,
+    "Kata Indo": "Bersih",
+    "Kata Muna": "Nggela",
+    "Kalimat Indo": "Rumah itu bersih",
+    "Kalimat Muna": "Lambu awatu kanggela"
+  },
+  {
+    "No.": 28,
+    "Kata Indo": "Hati-hati",
+    "Kata Muna": "Posioghondo",
+    "Kalimat Indo": "Hati-hati di jalan",
+    "Kalimat Muna": "Posioghondo we kangkaha"
+  },
+  {
+    "No.": 29,
+    "Kata Indo": "Jauh",
+    "Kata Muna": "Kodoho",
+    "Kalimat Indo": "Rumah itu jauh sekali",
+    "Kalimat Muna": "Lambu awatu kakodoho sepaliha"
+  },
+  {
+    "No.": 30,
+    "Kata Indo": "Baju",
+    "Kata Muna": "Bhadhu",
+    "Kalimat Indo": "Bajumu bagus sekali",
+    "Kalimat Muna": "Bhadhum kakesa sepaliha"
+  },
+  {
+    "No.": 31,
+    "Kata Indo": "Nasi",
+    "Kata Muna": "Ghoti",
+    "Kalimat Indo": "Aku makan nasi",
+    "Kalimat Muna": "Inodi afuma ghoti"
+  },
+  {
+    "No.": 32,
+    "Kata Indo": "Ayah",
+    "Kata Muna": "Ama",
+    "Kalimat Indo": "Ayah pergi ke kebun",
+    "Kalimat Muna": "Ama no kala te galu"
+  },
+  {
+    "No.": 33,
+    "Kata Indo": "Ibu",
+    "Kata Muna": "Ina",
+    "Kalimat Indo": "Ibu memasak di dapur",
+    "Kalimat Muna": "Inaku negau we ghabu"
+  },
+  {
+    "No.": 34,
+    "Kata Indo": "Adik",
+    "Kata Muna": "Ai",
+    "Kalimat Indo": "Adikku bermain",
+    "Kalimat Muna": "Aiku nopo kalalambu "
+  },
+  {
+    "No.": 35,
+    "Kata Indo": "Kakak",
+    "Kata Muna": "Kakak",
+    "Kalimat Indo": "Kakakku Bowo dan Kakakku Tika sedang tidur",
+    "Kalimat Muna": "Isaku La Bowo bhe isaku Wa Tika nando dolodo"
+  },
+  {
+    "No.": 36,
+    "Kata Indo": "Kakek",
+    "Kata Muna": "Awa",
+    "Kalimat Indo": "Kakek dan Nenek sangat baik",
+    "Kalimat Muna": "Awahiku katano lalondo"
+  },
+  {
+    "No.": 37,
+    "Kata Indo": "Berhitung",
+    "Kata Muna": "Feapi",
+    "Kalimat Indo": "Ayo berhitung satu, dua, tiga",
+    "Kalimat Muna": "Mai feapi se ise, raise, tolu ise"
+  },
+  {
+    "No.": 38,
+    "Kata Indo": "Nakal",
+    "Kata Muna": "Kababaru",
+    "Kalimat Indo": "Jangan nakal",
+    "Kalimat Muna": "Koise kababaru"
+  },
+  {
+    "No.": 39,
+    "Kata Indo": "Belajar",
+    "Kata Muna": "Poguru",
+    "Kalimat Indo": "Sana belajar",
+    "Kalimat Muna": "Kala poguru"
+  },
+  {
+    "No.": 40,
+    "Kata Indo": "Motor",
+    "Kata Muna": "Motoro",
+    "Kalimat Indo": "Dia naik motor",
+    "Kalimat Muna": "Anoa nofoni motoro"
+  },
+  {
+    "No.": 41,
+    "Kata Indo": "Mereka",
+    "Kata Muna": "Andoa",
+    "Kalimat Indo": "Mereka sedang apa?",
+    "Kalimat Muna": "Andoa nando deafa?"
+  },
+  {
+    "No.": 42,
+    "Kata Indo": "Kami",
+    "Kata Muna": "Insaidi",
+    "Kalimat Indo": "Kami akan pergi",
+    "Kalimat Muna": "Insaidi takumala"
+  },
+  {
+    "No.": 43,
+    "Kata Indo": "Pohon",
+    "Kata Muna": "Sau",
+    "Kalimat Indo": "Pohon itu hijau",
+    "Kalimat Muna": "Sau amaitu noidho"
+  },
+  {
+    "No.": 44,
+    "Kata Indo": "Baik",
+    "Kata Muna": "Neta",
+    "Kalimat Indo": "Kamu baik sekali",
+    "Kalimat Muna": "Ihintu kata sepaliha"
+  },
+  {
+    "No.": 45,
+    "Kata Indo": "Malas",
+    "Kata Muna": "Malasi",
+    "Kalimat Indo": "Aku sedang malas",
+    "Kalimat Muna": "Inodi nando amalasi"
+  },
+  {
+    "No.": 46,
+    "Kata Indo": "Bercanda",
+    "Kata Muna": "Kambage",
+    "Kalimat Indo": "Aku hanya bercanda",
+    "Kalimat Muna": "Inodi apokambage kawu"
+  },
+  {
+    "No.": 47,
+    "Kata Indo": "Marah",
+    "Kata Muna": "Mamara",
+    "Kalimat Indo": "Jangan marah",
+    "Kalimat Muna": "Koem mamara"
+  },
+  {
+    "No.": 48,
+    "Kata Indo": "Sedih",
+    "Kata Muna": "Bhila lalo",
+    "Kalimat Indo": "Aku sedih",
+    "Kalimat Muna": "Inodi nobhila laloku"
+  },
+  {
+    "No.": 49,
+    "Kata Indo": "Kotor",
+    "Kata Muna": "Raku",
+    "Kalimat Indo": "Lantai itu kotor",
+    "Kalimat Muna": "Hale awatu no raku"
+  },
+  {
+    "No.": 50,
+    "Kata Indo": "Aneh",
+    "Kata Muna": "Sigaha dua",
+    "Kalimat Indo": "Orang itu aneh",
+    "Kalimat Muna": "Mie amaitu nosigha dua"
+  },
+  {
+    "No.": 51,
+    "Kata Indo": "Tetangga",
+    "Kata Muna": "Kaposoririha",
+    "Kalimat Indo": "Tengga baru kita",
+    "Kalimat Muna": "Kaposoririha bughountom"
+  },
+  {
+    "No.": 52,
+    "Kata Indo": "Biru",
+    "Kata Muna": "Kakanda",
+    "Kalimat Indo": "Lautnya berwarna biru",
+    "Kalimat Muna": "Tehino warana kakanda"
+  },
+  {
+    "No.": 53,
+    "Kata Indo": "Cantik",
+    "Kata Muna": "Pasole",
+    "Kalimat Indo": "Bunga itu cantik",
+    "Kalimat Muna": "Bunga amaitu kapasole"
+  },
+  {
+    "No.": 54,
+    "Kata Indo": "Pulang",
+    "Kata Muna": "Suli",
+    "Kalimat Indo": "Kapan kamu pulang?",
+    "Kalimat Muna": "Naefie ihintu osumuli?"
+  },
+  {
+    "No.": 55,
+    "Kata Indo": "Sekolah",
+    "Kata Muna": "Sikola",
+    "Kalimat Indo": "Ayo berangkat ke sekolah",
+    "Kalimat Muna": "Mai dokalagho we sikola"
+  },
+  {
+    "No.": 56,
+    "Kata Indo": "Pasar",
+    "Kata Muna": "Daoa",
+    "Kalimat Indo": "Aku pergi ke pasar",
+    "Kalimat Muna": "Inodi akala wa daoa"
+  },
+  {
+    "No.": 57,
+    "Kata Indo": "Mendung",
+    "Kata Muna": "Ngko-ngkolu",
+    "Kalimat Indo": "Cuacanya mendung",
+    "Kalimat Muna": "Goleitu ne ngko-ngkolu"
+  },
+  {
+    "No.": 58,
+    "Kata Indo": "Jatuh",
+    "Kata Muna": "Kutu",
+    "Kalimat Indo": "Aku jatuh dari pohon",
+    "Kalimat Muna": "Inodi a kutu maigho wa pughuno sau"
+  },
+  {
+    "No.": 59,
+    "Kata Indo": "Lucu",
+    "Kata Muna": "Kalucu",
+    "Kalimat Indo": "Hewan itu lucu sekali",
+    "Kalimat Muna": "Kadadi amaitu kalucu sepaliha"
+  },
+  {
+    "No.": 60,
+    "Kata Indo": "Sapi",
+    "Kata Muna": "O sapi",
+    "Kalimat Indo": "Sapi itu milik pak kepala desa",
+    "Kalimat Muna": "O sapi maitu sapino Kapala desa"
+  },
+  {
+    "No.": 61,
+    "Kata Indo": "Lari",
+    "Kata Muna": "Tende",
+    "Kalimat Indo": "Saya suka berlari",
+    "Kalimat Muna": "Inodi asiane a tende"
+  },
+  {
+    "No.": 62,
+    "Kata Indo": "Renang",
+    "Kata Muna": "Leni",
+    "Kalimat Indo": "Saya suka berenang",
+    "Kalimat Muna": "Inodi asiane a leni"
+  },
+  {
+    "No.": 63,
+    "Kata Indo": "Kucing",
+    "Kata Muna": "Bheka",
+    "Kalimat Indo": "Kucingku minum susu",
+    "Kalimat Muna": "Bhekaku noforoghu susu"
+  },
+  {
+    "No.": 64,
+    "Kata Indo": "Lampu",
+    "Kata Muna": "Kantalea",
+    "Kalimat Indo": "Lampu itu menyala",
+    "Kalimat Muna": "Kantalea amaitu norende"
+  },
+  {
+    "No.": 65,
+    "Kata Indo": "Banjir",
+    "Kata Muna": "Mawa",
+    "Kalimat Indo": "Hujan menyebabkan banjir",
+    "Kalimat Muna ": "Ghuse nembali mawa"
+  },
+  {
+    "No.": 66,
+    "Kata Indo": "Kebakaran",
+    "Kata Muna": "Tikantunu",
+    "Kalimat Indo": "Disana ada kebakaran",
+    "Kalimat Muna": "Nawati bhe tikantununo"
+  },
+  {
+    "No.": 67,
+    "Kata Indo": "Tertawa",
+    "Kata Muna": "Futa",
+    "Kalimat Indo": "Saya tertawa",
+    "Kalimat Muna": "Inodi afuta"
+  },
+  {
+    "No.": 68,
+    "Kata Indo": "Benci",
+    "Kata Muna": "Rakue",
+    "Kalimat Indo": "Saya benci kamu",
+    "Kalimat Muna": "Inodi arakuko"
+  },
+  {
+    "No.": 69,
+    "Kata Indo": "Suka",
+    "Kata Muna": "Asi",
+    "Kalimat Indo": "Saya suka ikan",
+    "Kalimat Muna": "Inodi asiane kenta"
+  },
+  {
+    "No.": 70,
+    "Kata Indo": "Takut",
+    "Kata Muna": "Tehi",
+    "Kalimat Indo": "Saya takut hantu",
+    "Kalimat Muna ": "Inodi aotehi kahanda"
+  },
+  {
+    "No.": 71,
+    "Kata Indo": "Berani",
+    "Kata Muna": "Barani",
+    "Kalimat Indo": "Saya tidak berani",
+    "Kalimat Muna": "Inodi mina barani"
+  },
+  {
+    "No.": 72,
+    "Kata Indo": "Malu",
+    "Kata Muna": "Kaili-ili",
+    "Kalimat Indo": "Jangan malu-malu",
+    "Kalimat Muna": "Koem kaili-ili"
+  },
+  {
+    "No.": 73,
+    "Kata Indo": "Kelapa",
+    "Kata Muna": "Ghai",
+    "Kalimat Indo": "Ayo ambil kelapa itu",
+    "Kalimat Muna": "Mai ala ghai watu"
+  },
+  {
+    "No.": 74,
+    "Kata Indo": "Sayur",
+    "Kata Muna": "Kadada",
+    "Kalimat Indo": "Saya tidak suka sayur",
+    "Kalimat Muna": "Inodi mina amasiane kadada"
+  },
+  {
+    "No.": 75,
+    "Kata Indo": "Capek",
+    "Kata Muna": "Wule",
+    "Kalimat Indo": "Saya capek",
+    "Kalimat Muna": "Inodi aowule"
+  },
+  {
+    "No.": 76,
+    "Kata Indo": "Ayam",
+    "Kata Muna": "Manu",
+    "Kalimat Indo": "Kakekku memelihara ayam",
+    "Kalimat Muna": "Awaku nepiara manu"
+  },
+  {
+    "No.": 77,
+    "Kata Indo": "Mandi",
+    "Kata Muna": "Kadiu",
+    "Kalimat Indo": "Saya sudah selesai mandi",
+    "Kalimat Muna": "Inodi padam ae kadiu"
+  },
+  {
+    "No.": 78,
+    "Kata Indo": "Jalan-jalan",
+    "Kata Muna": "Mpali-mpali",
+    "Kalimat Indo": "Ayo pergi jalan-jalan",
+    "Kalimat Muna": "Mai dokalagho dempali-mpali"
+  },
+  {
+    "No.": 79,
+    "Kata Indo": "Sakit",
+    "Kata Muna": "Saki",
+    "Kalimat Indo": "Saya sedang sakit",
+    "Kalimat Muna": "Inodi nando ao saki"
+  },
+  {
+    "No.": 80,
+    "Kata Indo": "Luka",
+    "Kata Muna": "Bhela",
+    "Kalimat Indo": "Saya terluka",
+    "Kalimat Muna": "Inodi ao bhela"
+  },
+  {
+    "No.": 81,
+    "Kata Indo": "Teman",
+    "Kata Muna": "Sabhangka",
+    "Kalimat Indo": "Mereka adalah teman-temanku",
+    "Kalimat Muna": "Andoa sabhangkahiku"
+  },
+  {
+    "No.": 82,
+    "Kata Indo": "Air",
+    "Kata Muna": "Oe",
+    "Kalimat Indo": "Air disini melimpah",
+    "Kalimat Muna": "Oe naini notikambisa"
+  },
+  {
+    "No.": 83,
+    "Kata Indo": "Api",
+    "Kata Muna": "Ifi",
+    "Kalimat Indo": "Disana ada api",
+    "Kalimat Muna": "Nawatu bhe ifi"
+  },
+  {
+    "No.": 84,
+    "Kata Indo": "Langit",
+    "Kata Muna": "Lani",
+    "Kalimat Indo": "Langit itu cerah",
+    "Kalimat Muna": "Lani watu nentalea"
+  },
+  {
+    "No.": 85,
+    "Kata Indo": "Bunga",
+    "Kata Muna": "O bunga",
+    "Kalimat Indo": "Saya menanam bunga",
+    "Kalimat Muna": "Inodi ae tisa bunga"
+  },
+  {
+    "No.": 86,
+    "Kata Indo": "Belanja",
+    "Kata Muna": "Bhalanda",
+    "Kalimat Indo": "Saya belanja sayuran",
+    "Kalimat Muna": "Inodi bhalanda kambulu"
+  },
+  {
+    "No.": 87,
+    "Kata Indo": "Diam",
+    "Kata Muna": "Mina bisara",
+    "Kalimat Indo": "Kamu lebih baik diam",
+    "Kalimat Muna": "Ihintu bhihaku naokesa mina obisara"
+  },
+  {
+    "No.": 88,
+    "Kata Indo": "Rambut",
+    "Kata Muna": "Wulu fotu",
+    "Kalimat Indo": "Rambut nenekku berwarna putih",
+    "Kalimat Muna": "Wulu fotuno awaku nokoghua"
+  },
+  {
+    "No.": 89,
+    "Kata Indo": "Berburu",
+    "Kata Muna": "Dehamba",
+    "Kalimat Indo": "Besok kita berburu babi",
+    "Kalimat Muna": "Naewine intaidim daehamba wewi"
+  },
+  {
+    "No.": 90,
+    "Kata Indo": "Jorok",
+    "Kata Muna": "Pokaraku",
+    "Kalimat Indo": "Kamu jorok sekali",
+    "Kalimat Muna": "Ihintu opokaraku sepaliha"
+  },
+  {
+    "No.": 91,
+    "Kata Indo": "Angin",
+    "Kata Muna": "Kawea",
+    "Kalimat Indo": "anginnya kencang sekali",
+    "Kalimat Muna": "Kaweano noghosa sepaliha"
+  },
+  {
+    "No.": 92,
+    "Kata Indo": "kain",
+    "Kata Muna": "Kabhini",
+    "Kalimat Indo": "aku ingin beli kain itu",
+    "Kalimat Muna": "Inodi apindalo aghumoli kabhini aitu"
+  },
+  {
+    "No.": 93,
+    "Kata Indo": "jagung",
+    "Kata Muna": "Kahitela",
+    "Kalimat Indo": "bibiku menjual jagung",
+    "Kalimat Muna": "Fokoinauku neaso kahitela"
+  },
+  {
+    "No.": 94,
+    "Kata Indo": "sepatu",
+    "Kata Muna": "Kauso",
+    "Kalimat Indo": "aku ingin sepatu baru",
+    "Kalimat Muna": "Inodi apindalo kauso bughou"
+  },
+  {
+    "No.": 95,
+    "Kata Indo": "tinggal",
+    "Kata Muna": "Late",
+    "Kalimat Indo": "aku tinggal di desa seberang",
+    "Kalimat Muna": "Inodi ae late we desa sewetano"
+  },
+  {
+    "No.": 96,
+    "Kata Indo": "paksa",
+    "Kata Muna": "Fosuru",
+    "Kalimat Indo": "jangan memaksa",
+    "Kalimat Muna": "Koise mefosuru"
+  },
+  {
+    "No.": 97,
+    "Kata Indo": "hutan",
+    "Kata Muna": "Katugha",
+    "Kalimat Indo": "jangan pergi ke hutan",
+    "Kalimat Muna": "Koem kala we katugha"
+  },
+  {
+    "No.": 98,
+    "Kata Indo": "enak",
+    "Kata Muna": "Mbaka",
+    "Kalimat Indo": "makanannya enak",
+    "Kalimat Muna": "Kafumano nombaka"
+  },
+  {
+    "No.": 99,
+    "Kata Indo": "janji",
+    "Kata Muna": "Dhandi",
+    "Kalimat Indo": "kita janji bertemu besok",
+    "Kalimat Muna": "Insaidi tapo dhandi tapoghawa naewine"
+  }
+]

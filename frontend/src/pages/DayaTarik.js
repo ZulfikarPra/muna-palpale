@@ -1,6 +1,7 @@
 import { CardLeft } from '../components/CardLeft';
 import { CardRight } from '../components/CardRight';
 import { BahasaMuna } from '../components/BahasaMuna';
+import { ButtonAdm } from '../components/ButtonAdm';
 
 import { useState } from 'react';
 
@@ -9,6 +10,13 @@ export const DayaTarik = () => {
   const [menuText, setMenuText] = useState('Alam Desa');
   const [isDropdownActive, setIsDropdownActive] = useState(false);
   const [pageActive, setPageActive] = useState('AlamDesa');
+
+  const dropdownBtnAction = (text, section) => {
+    setMenuText(text);
+    setShow(!show);
+    setIsDropdownActive(!isDropdownActive);
+    setPageActive(section);
+  };
 
   return (
     <div className="daya-tarik">
@@ -38,10 +46,7 @@ export const DayaTarik = () => {
               <li>
                 <button
                   onClick={(e) => {
-                    setMenuText(e.target.innerText);
-                    setShow(!show);
-                    setIsDropdownActive(!isDropdownActive);
-                    setPageActive('AlamDesa');
+                    dropdownBtnAction(e.target.innerText, 'AlamDesa');
                   }}
                 >
                   Alam Desa
@@ -50,10 +55,7 @@ export const DayaTarik = () => {
               <li>
                 <button
                   onClick={(e) => {
-                    setMenuText(e.target.innerText);
-                    setShow(!show);
-                    setIsDropdownActive(!isDropdownActive);
-                    setPageActive('SosialBudaya');
+                    dropdownBtnAction(e.target.innerText, 'SosialBudaya');
                   }}
                 >
                   Sosial Budaya
@@ -62,10 +64,7 @@ export const DayaTarik = () => {
               <li>
                 <button
                   onClick={(e) => {
-                    setMenuText(e.target.innerText);
-                    setShow(!show);
-                    setIsDropdownActive(!isDropdownActive);
-                    setPageActive('MakananKhas');
+                    dropdownBtnAction(e.target.innerText, 'MakananKhas');
                   }}
                 >
                   Makanan Khas
@@ -74,10 +73,7 @@ export const DayaTarik = () => {
               <li>
                 <button
                   onClick={(e) => {
-                    setMenuText(e.target.innerText);
-                    setShow(!show);
-                    setIsDropdownActive(!isDropdownActive);
-                    setPageActive('BahasaMuna');
+                    dropdownBtnAction(e.target.innerText, 'BahasaMuna');
                   }}
                 >
                   Bahasa Muna
@@ -105,6 +101,7 @@ export const DayaTarik = () => {
           </ul>
         </div>
       </div>
+      {/* <ButtonAdm text="tambah" icon="fa-solid fa-plus" btnStyle="red"></ButtonAdm> */}
       <div className="daya-tarik-content">
         {pageActive === 'AlamDesa' && <CardLeft></CardLeft>}
         {pageActive === 'SosialBudaya' && (

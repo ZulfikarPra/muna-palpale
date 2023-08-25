@@ -1,10 +1,10 @@
 import { Link } from 'react-router-dom';
 import logo512 from '../asset/logo512.png';
 import { useState } from 'react';
-import profileIcon from '../asset/account-icon.png'
+import profileIcon from '../asset/account-icon.png';
 export const Header = () => {
   const [hamburgerOpen, setHamburgerOpen] = useState(false);
-  const [isLogin, setIsLogin] = useState(true);
+  const [isLogin, setIsLogin] = useState(false);
 
   const toggleHamburger = () => {
     setHamburgerOpen(!hamburgerOpen);
@@ -57,26 +57,24 @@ export const Header = () => {
               </Link>
             </li>
           </ul>
-          {
-            isLogin? (
-              <div className="logout">
-                <h4>Hi, Nia Milla</h4>
-                <div className="img">
-                  <img src={profileIcon} alt="" />
-                </div>
-                <button className="logoutButton">Logout</button>
+          {isLogin ? (
+            <div className="logout">
+              <h4>Hi, Nia Milla</h4>
+              <div className="img">
+                <img src={profileIcon} alt="" />
               </div>
-            ):(
-              <Link to={'/login'} className="nav-link-login">
-                Login
-              </Link>
-            )
-          }
+              <button className="logoutButton">Logout</button>
+            </div>
+          ) : (
+            <Link to={'/login'} className="nav-link-login">
+              Login
+            </Link>
+          )}
         </nav>
         <button className={hamburgerOpen ? 'hamburgerMenu hamburgerOpen' : 'hamburgerMenu'} onClick={toggleHamburger}>
-          <span ></span>
-          <span ></span>
-          <span ></span>
+          <span></span>
+          <span></span>
+          <span></span>
         </button>
       </div>
     </header>

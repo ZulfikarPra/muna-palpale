@@ -1,7 +1,8 @@
+import KONTEN from '../data/kamus-bahasa-muna.json';
+
 export const BahasaMuna = () => {
   return (
     <div className="bahasa-muna">
-      {/* <h1>BAHASA MUNA</h1> */}
       <div className="sejarah-singkat">
         <h2>Sejarah Singkat</h2>
         <div className="sejarah-content">
@@ -43,36 +44,24 @@ export const BahasaMuna = () => {
             <thead>
               <tr>
                 <th>No</th>
-                <th>Bahasa Indonesia</th>
-                <th>Bahasa Muna</th>
-                <th>Contoh Kalimat</th>
+                <th>Kata Bahasa Indonesia</th>
+                <th>Kata Bahasa Muna</th>
+                <th>Kalimat Bahasa Indonesia</th>
+                <th>Kalimat Bahasa Muna</th>
               </tr>
             </thead>
             <tbody>
-              <tr>
-                <th>p</th>
-                <th>p</th>
-                <th>p</th>
-                <th>p</th>
-              </tr>
-              <tr>
-                <th>p</th>
-                <th>p</th>
-                <th>p</th>
-                <th>p</th>
-              </tr>
-              <tr>
-                <th>p</th>
-                <th>p</th>
-                <th>p</th>
-                <th>p</th>
-              </tr>
-              <tr>
-                <th>p</th>
-                <th>p</th>
-                <th>p</th>
-                <th>p</th>
-              </tr>
+              {KONTEN.map((data) => {
+                return (
+                  <tr>
+                    <th>{data['No.']}</th>
+                    <th>{data['Kata Indo']}</th>
+                    <th>{data['Kata Muna']}</th>
+                    <th>{data['Kalimat Indo']}</th>
+                    <th>{data['Kalimat Muna']}</th>
+                  </tr>
+                );
+              })}
             </tbody>
           </table>
         </div>

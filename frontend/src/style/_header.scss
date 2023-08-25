@@ -39,14 +39,18 @@ header {
       }
     }
     nav {
-      transition: .4s ease;
+      transition: 0.4s ease;
       display: flex;
       gap: 30px;
+      // justify-content: center;
       // width: fit-content;
-      // align-items: center;
+      align-items: center;
       // background-color: green;
-      height: 100% ;
+      height: 100%;
       .nav-link-login {
+        display: flex;
+        align-items: center;
+        height: 2.2em;
         background: linear-gradient($aqua, $blue);
         padding: 0.5rem 1.2rem;
         color: white;
@@ -56,8 +60,8 @@ header {
         font-family: Black Mango;
         font-weight: bolder;
       }
-      .logout{
-        &:hover .logoutButton{
+      .logout {
+        &:hover .logoutButton {
           // background-color: green;
           display: inline-block;
         }
@@ -68,10 +72,10 @@ header {
         width: 70px;
         // padding-bottom: 30px;
         align-items: center;
-        h4{
+        h4 {
           display: none;
         }
-        .img{
+        .img {
           align-self: start;
           // background-color: blue;
           // height: 100%;
@@ -81,20 +85,19 @@ header {
           align-items: center;
           justify-content: center;
           cursor: pointer;
-          img{
+          img {
             // padding-top: 5px;
             height: 75%;
           }
         }
-        button{
-          
-          &:hover{
+        button {
+          &:hover {
             cursor: pointer;
-            background-color: darken($oren, .5);
-            transition: .3s ease;
+            background-color: darken($oren, 0.5);
+            transition: 0.3s ease;
           }
           margin-top: 20px;
-          transition: .3s ease;
+          transition: 0.3s ease;
           padding: 0.5rem 1.4rem;
           color: white;
           border-radius: 1.5rem;
@@ -113,7 +116,7 @@ header {
           // left: 50%;
           // transform: translateY(140%) translateX(-50%);
         }
-        .img+button {
+        .img + button {
           display: none;
         }
       }

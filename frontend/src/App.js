@@ -1,5 +1,5 @@
 // import './App.css';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes, useLocation } from 'react-router-dom';
 import { Home } from './pages/Home';
 import { Login } from './pages/Login';
 import { Register } from './pages/Register';
@@ -15,19 +15,28 @@ function App() {
   return (
     <div className="App">
       <Router>
-        <Header></Header>
-        <Routes>
-          <Route path="/" element={<Home></Home>}></Route>
-          <Route path="/login" element={<Login></Login>}></Route>
-          <Route path="/register" element={<Register></Register>}></Route>
-          <Route path="/galeri" element={<Galeri></Galeri>}></Route>
-          <Route path="/peta" element={<Peta></Peta>}></Route>
-          <Route path="/daya-tarik" element={<DayaTarik></DayaTarik>}></Route>
-          <Route path="/tentang-desa-moolo" element={<TentangDesaMoolo></TentangDesaMoolo>}></Route>
-          <Route path="/tentang-desa-lanobake" element={<TentangDesaLanobake></TentangDesaLanobake>}></Route>
-        </Routes>
+        <Inner></Inner>
       </Router>
     </div>
+  );
+}
+
+function Inner() {
+  const location = useLocation();
+  return (
+    <>
+      {location.pathname === '/login' ? '' : location.pathname === '/register' ? '' : <Header></Header>}
+      <Routes>
+        <Route path="/" element={<Home></Home>}></Route>
+        <Route path="/login" element={<Login></Login>}></Route>
+        <Route path="/register" element={<Register></Register>}></Route>
+        <Route path="/galeri" element={<Galeri></Galeri>}></Route>
+        <Route path="/peta" element={<Peta></Peta>}></Route>
+        <Route path="/daya-tarik" element={<DayaTarik></DayaTarik>}></Route>
+        <Route path="/tentang-desa-moolo" element={<TentangDesaMoolo></TentangDesaMoolo>}></Route>
+        <Route path="/tentang-desa-lanobake" element={<TentangDesaLanobake></TentangDesaLanobake>}></Route>
+      </Routes>
+    </>
   );
 }
 

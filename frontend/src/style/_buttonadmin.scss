@@ -1,0 +1,19 @@
+.button-admin {
+  display: flex;
+  //   height: 20px;
+  //   background-color: red;
+  border-radius: 2em;
+  padding: 0.5em;
+  justify-content: space-between;
+  width: 6em;
+  color: white;
+  align-items: center;
+  button {
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-family: Mango;
+    font-weight: 600;
+    font-size: large;
+  }
+}
