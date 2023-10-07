@@ -20,7 +20,7 @@ jobs:
           script: |
             cd muna-palpale
             git reset --hard
-            git pull origin master
+            git pull origin main
             export NVM_DIR=~/.nvm
             source ~/.nvm/nvm.sh
             npm install
