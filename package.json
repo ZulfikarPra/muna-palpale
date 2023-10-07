@@ -1,0 +1,27 @@
+{
+  "name": "muna-palpale",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "frontend": "npm start --prefix frontend",
+    "backend": "npm run dev --prefix backend",
+    "installfrontend": "npm install --prefix frontend",
+    "installbackend": "npm install --prefix backend",
+    "start": "concurrently \"npm run installbackend\" \"npm run backend\" \"npm run installfrontend\" \"npm run frontend\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ZulfikarPra/muna-palpale.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ZulfikarPra/muna-palpale/issues"
+  },
+  "homepage": "https://github.com/ZulfikarPra/muna-palpale#readme",
+  "dependencies": {
+    "concurrently": "^8.2.1"
+  }
+}
