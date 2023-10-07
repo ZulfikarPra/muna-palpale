@@ -26,4 +26,4 @@ jobs:
             npm install
             npx pm2 stop all
             npx pm2 detele all
-            npx pm2 start npm --start
+            npx pm2 start npm -- start
