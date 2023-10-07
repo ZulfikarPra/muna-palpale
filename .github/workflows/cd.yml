@@ -24,6 +24,6 @@ jobs:
             git reset --hard
             git pull origin main
             npm install
-            npx pm2 stop all
-            npx pm2 detele all
-            npx pm2 start npm -- start
+            forever stopall
+            forever start -c "npm start" ./frontend
+            forever start -c "npm start" ./backend
