@@ -18,8 +18,8 @@ jobs:
           password: ${{ secrets.SSH_PASSWORD }}
           port: ${{ secrets.SSH_PORT }}
           script: |
-          export PATH="$HOME/bin/nodejs/bin:$PATH"
-          source ~/.bash_profile
+            export PATH="$HOME/bin/nodejs/bin:$PATH"
+            source ~/.bash_profile
             cd muna-palpale
             git reset --hard
             git pull origin main
