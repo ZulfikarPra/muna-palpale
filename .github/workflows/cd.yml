@@ -25,5 +25,7 @@ jobs:
             git pull origin main
             npm install
             forever stopall
-            forever start -c "npm start" ./frontend
-            forever start -c "npm start" ./backend
+            cd backend
+            forever start -c "npm start" ./
+            cd ../frontend
+            forever start -c "npm start" ./
